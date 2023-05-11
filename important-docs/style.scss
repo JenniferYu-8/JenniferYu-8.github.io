@@ -1,0 +1,513 @@
+$darkRed: #411313; // # rgb(65, 19, 19)
+$lightRed: #822726;
+$white: #eeeeee; // rgb(245, 245, 245)
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url(../proxima.otf);
+}
+
+@font-face {
+    font-family: 'proxima_nova_bold';
+    src: url(../proxima-bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    // font-family: 'Times New Roman', Times, serif;
+    font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+}
+
+.background-image {
+    background-image: linear-gradient(rgba(5, 5, 5, 0.8), rgba(10, 10, 10, 0.7)), url("/images/background.png") !important; // CHANGE IMAGE
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    // overflow: hidden; // play with later
+}
+
+nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    background: transparent;
+    z-index: 1000;
+
+    .navbar {
+        // max-width: 1250px; // ?
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 3em; // right unit?
+        background: transparent;
+
+        img {
+            width: 10vh; // adjust
+            margin: 1vh;
+
+            &:hover {
+                transform: scale(1.05);
+                filter: drop-shadow(0 0 5px $darkRed);
+            }
+        }
+
+        .nav-links {
+            // height: 100%;
+            // line-height: 12vh;
+
+            .links {
+                display: flex;
+
+                li {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    padding: 0.2em 1em;
+                    white-space: nowrap;
+
+                    &:hover { 
+                        transform: scale(1.02);
+
+                        .sub-menu { // about, conference, resources
+                            animation: growDown 0.2s ease-in-out forwards;
+                            transform-origin: top center;
+                            display: block;
+                        }
+                    }
+
+                    a {
+                        height: 100%;
+                        font-size: 1.1em;
+                        color: $white;
+                        text-decoration: none;
+                        align-items: center;
+                        justify-content: center;
+
+                        &:hover {
+                            text-shadow: 0 0 1px $darkRed, 0 0 1px $darkRed;
+                        }
+                    }
+
+                    .sub-menu {
+                        position: absolute;
+                        top: 1.5em;
+                        left: 0;
+                        // background: $white;
+                        background: $darkRed;
+                        line-height: 4vh;
+                        display: none; 
+
+                        li {
+                            padding: 0 2vw;
+
+                            &:hover {
+                                background-color: rgba(136, 0, 0, 0.2);
+                            }
+
+                            a {
+                                color: $white;
+
+                                &:hover {
+                                    text-shadow: none;
+                                }
+                            }
+
+                        }
+                    }
+
+                }
+
+                #navbar-button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 1vw;
+                    // height: 20%;
+                    
+                                    
+                    #button {
+                        color: $white;
+                        border-color: $darkRed; // i
+                        background-color: rgba(130,39,38, 0.5);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        padding: 0 1.5vw;
+                        height: 6vh;
+                        width: 100%;
+                        border: solid;
+                        border-radius: 50px;
+                    
+                        &:hover {
+                            // border-color: $darkRed;
+                            // background-color: $darkRed;
+                            // color: $white;
+                            text-shadow: none;
+                            border-color: $white !important;
+                            background-color: $white;
+                            color: $darkRed;
+                            transition: all 0.3s ease;
+                        }
+                    }
+            
+                }
+            }
+        }
+    }
+
+}
+
+nav.scroll {
+    background-color: $darkRed;
+    // transition: background-color 0.2s linear;
+  }
+
+
+.links {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-align: center;
+}
+
+.hero {
+    height:40vh;
+    // text-shadow: 0 0 5px $darkRed, 0 0 5px $darkRed;
+
+    .hero-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10vh;
+    }
+}
+
+.hero-content {
+    color: $white;
+    padding: 18vh 0;
+
+    h1 {
+        color: $white;
+        font-size: 4em;
+    }
+}
+
+// Page content styles
+.body {
+    background-color: $white;
+}
+
+h2 {
+    font-family: 'proxima_nova_bold';
+    font-size: 3em; // FJ CHANGE TO 2em FOR THE ACC PAGE
+    padding-top: 10vh;
+    text-align: center;
+}
+
+// DELETE THE SECTON BELOW FOR THE ACC PAGE
+p {
+    text-align: center;
+    font-size: 2em;
+    padding: 5vh 10vw;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3vh 40vw;
+
+    a {
+        text-decoration:none;
+        color: $darkRed;
+        transition:0.5s;
+        padding-bottom: 10vh;
+
+        &:hover {
+            color:$lightRed;
+        }
+
+        i {
+            font-size:5em;
+            margin:0% 1%;       
+        }
+    }
+}
+// ^^^ DELETE THIS SECTION FOR THE ACC PAGE
+
+// INSERT PAGE-SPECIFIC STYLES HERE
+
+
+
+
+
+
+// footer
+.footer{
+    background: $darkRed;
+    padding: 3vh 0;
+    text-align:center;
+
+    .row {
+        width:100%;
+        margin:1% 0%;
+        padding:0.6% 0%;
+        color: #aaaaaa;
+        font-size: 1em;
+
+        a {
+            text-decoration:none;
+            color: #aaaaaa;
+            transition:0.5s;
+
+            &:hover {
+                color:$white;
+            }
+
+            i {
+                font-size:2em;
+                margin:0% 1%;       
+            }
+        }
+
+        ul {
+            width:100%;
+
+            li {
+                display:inline-block;
+                margin:0px 2vw;
+            }
+        }
+
+        p {
+            font-size: 0.85em;
+            padding-top: 4vh;
+        }
+    }
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    // 80% {
+    //     transform: scaleY(1.1)
+    // }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+@media screen and (max-width: 1025px) {
+
+    nav {
+        .navbar {
+            //background: #878787;
+            height: 12vh; // adjust later
+    
+            img {
+                width: 6vh; // adjust
+                position: absolute;
+                top: 20%;
+                left: 5%;
+    
+                &:hover {
+                    transform: scale(1.05);
+                    filter: drop-shadow(0 0 5px $darkRed);
+                }
+            }
+
+            .nav-links {
+                .links {
+                    display: grid;
+                    grid-template-columns: auto;
+                    margin: 0;
+                    width: 100%;
+                    position: absolute;
+                    top: -1000px;
+                    opacity: 0;
+                    transition: all 0.3s ease;
+                    height: 100vh; // 50
+                    z-index: -1;
+                    background-color: $darkRed;
+                    left: 0;
+            
+                    li {
+                        width: 100%;
+                        height: auto;
+                
+                        a {
+                            font-size: 1.2em;
+                            text-align: center;
+                            padding: 0.1em;
+                            width: 100%;
+                            // display: table;
+                        }
+
+                        .sub-menu {
+                            display: none;
+                            position: relative;
+                            font-size: 0.8em;
+                            width: 100%;
+                            top: 0;
+                            right: 0;
+                            padding-bottom: 1em;
+                        }
+                    }
+
+                    #navbar-button {
+                        padding-bottom: 2em;
+                        white-space: nowrap;
+
+                        #button { 
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border: 0; 
+                            background-color: transparent; 
+                            margin: auto;
+                            width: 35%;
+                            height: 1em;
+                        }
+                    }
+                
+
+                }
+
+                .links.active {
+                    background-color: $darkRed;
+                    top: 100%;
+                    opacity: 1;
+                    transition: all 0.3s ease;
+                    z-index: 99;
+                    height: 70vh; // was 50vh
+                    font-size: 1.6rem;
+                }
+
+            }
+
+            .navbar-toggle .bar {
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                transition: all 0.3s ease-in-out;
+                background: $white;
+                border: solid $white;
+                border-radius: 50px;
+                display: block;
+                cursor: pointer;
+            }
+        
+            #mobile-menu {
+                position: absolute;
+                top: 20%;
+                right: 5%;
+                transform: translate(5%, 20%);
+            }
+
+            #mobile-menu.is-active .bar:nth-child(2) {
+                opacity: 0;
+            }
+        
+            #mobile-menu.is-active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+        
+            #mobile-menu.is-active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            
+        }
+
+        .navbar.active { // maybe fix it up a bit later
+            background: $darkRed;
+            transition: all 0.5s ease;
+        }
+    }
+
+}
+    
+
+@media screen and (max-width: 769px) {
+
+    .hero-content {
+        padding: 18vh 0; 
+    }
+}
+
+@media screen and (max-width: 481px) {
+    nav {
+        .navbar {
+            .nav-links {
+                .links {
+                    li {
+                        a {
+                            font-size: 0.8em;
+                        }
+
+                        .sub-menu {
+                            font-size: 0.7em;
+                            line-height: 1em;
+                            padding-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-content {
+        padding: 18vh 0; 
+
+        .hero-info {
+            padding: 0.2em;
+            i {
+                font-size: 1em;
+            }
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        .hero-countdown {
+            width: 20em; // iw
+        }
+
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hero-content {
+        padding: 18vh 0; 
+
+        .hero-info {
+
+            i {
+                font-size: 1em;
+            }
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1em;
+        }
+
+        p {
+            font-size: 1em; // iw
+        }
+    }
+}
+
+
