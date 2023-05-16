@@ -227,13 +227,9 @@ h2 {
 }
 
 .accordion-container {
-  padding: 5vh 12vw;
+  padding: 10vh 12vw;
   /* Style the buttons that are used to open and close the accordion panel */
   /* Style the accordion panel. Note: hidden by default */
-}
-
-.accordion-container h2 {
-  padding-bottom: 3vh;
 }
 
 .accordion-container p {
@@ -268,6 +264,23 @@ h2 {
   padding: 0.5vh 0;
 }
 
+.accordion-container .last-q {
+  border-bottom: 2px solid #411313;
+}
+
+.accordion-container .active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.15s linear;
+  transition: -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear;
+  transition: transform 0.15s linear, -webkit-transform 0.15s linear;
+}
+
+.accordion-container .clear {
+  border-bottom: none;
+}
+
 .accordion-container .panel {
   width: 100%;
   display: none;
@@ -276,6 +289,10 @@ h2 {
   max-height: 0;
   -webkit-transition: max-height 0.2s ease-out;
   transition: max-height 0.2s ease-out;
+}
+
+.accordion-container .last-a {
+  border-bottom: 2px solid #411313;
 }
 
 .footer {

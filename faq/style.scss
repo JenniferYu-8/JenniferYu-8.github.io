@@ -215,10 +215,10 @@ h2 {
 // INSERT PAGE-SPECIFIC STYLES HERE
 
 .accordion-container {
-    padding: 5vh 12vw;
-    h2 {
-        padding-bottom: 3vh;
-    }
+    padding: 10vh 12vw;
+    // h2 {
+    //     padding-bottom: 3vh;
+    // }
     p {
         background-color: $white;
         font-size: 1.05em;
@@ -254,11 +254,19 @@ h2 {
         }
     }
 
-    // doesn't work
-    // .active {
-    //     transform: rotate(180deg);
-    //     transition: transform 1s linear;
-    // }
+    .last-q {
+        border-bottom: 2px solid $darkRed;
+    }
+
+    // rotate arrow
+    .active {
+        transform: rotate(180deg);
+        transition: transform 0.15s linear;
+    }
+
+    .clear {
+        border-bottom: none;
+    }
     
     /* Style the accordion panel. Note: hidden by default */
     .panel {
@@ -269,6 +277,10 @@ h2 {
         border: none;
         max-height: 0;
         transition: max-height 0.2s ease-out;
+    }
+
+    .last-a {
+        border-bottom: 2px solid $darkRed;
     }
 
 }
