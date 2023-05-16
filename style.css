@@ -283,10 +283,6 @@ nav.scroll {
   text-justify: inter-word;
 }
 
-.letter-container .indent {
-  text-indent: 2vw;
-}
-
 .letter-container .bold {
   font-family: 'proxima_nova_bold';
 }

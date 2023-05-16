@@ -221,46 +221,61 @@ nav.scroll {
 
 h2 {
   font-family: 'proxima_nova_bold';
-  font-size: 3em;
+  font-size: 2em;
   padding-top: 10vh;
   text-align: center;
 }
 
-p {
-  text-align: center;
-  font-size: 2em;
-  padding: 5vh 10vw;
+.accordion-container {
+  padding: 5vh 12vw;
+  /* Style the buttons that are used to open and close the accordion panel */
+  /* Style the accordion panel. Note: hidden by default */
 }
 
-.icon-container {
+.accordion-container h2 {
+  padding-bottom: 3vh;
+}
+
+.accordion-container p {
+  background-color: #eeeeee;
+  font-size: 1.05em;
+  line-height: 3.8vh;
+  padding-bottom: 5vh;
+  padding-top: 2vh;
+}
+
+.accordion-container .accordion {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: 2px solid #411313;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 3vh 40vw;
+  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+  padding: 2vh 0;
+  font-size: 1.3em;
 }
 
-.icon-container a {
-  text-decoration: none;
-  color: #411313;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-bottom: 10vh;
+.accordion-container .accordion p {
+  padding: 0 2vw;
 }
 
-.icon-container a:hover {
-  color: #822726;
+.accordion-container .accordion .fa-angle-down {
+  padding: 0.5vh 0;
 }
 
-.icon-container a i {
-  font-size: 5em;
-  margin: 0% 1%;
+.accordion-container .panel {
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  border: none;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 .footer {
