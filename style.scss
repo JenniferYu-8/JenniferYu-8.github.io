@@ -105,7 +105,7 @@ nav {
                         display: none; 
 
                         li {
-                            // padding: 0 2vw;
+                            padding: 0 2vw;
 
                             &:hover {
                                 background-color: rgba(136, 0, 0, 0.2);
@@ -113,9 +113,6 @@ nav {
 
                             a {
                                 color: $white;
-                                width: 100%;
-                                text-align: left;
-                                padding-right: 2vw;
 
                                 &:hover {
                                     text-shadow: none;
@@ -267,9 +264,9 @@ nav.scroll {
         text-justify: inter-word;
     }
 
-    // .indent {
-    //     text-indent: 2vw;
-    // }
+    .indent {
+        text-indent: 2vw;
+    }
 
     .bold {
         font-family: 'proxima_nova_bold';
