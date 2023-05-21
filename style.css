@@ -120,16 +120,15 @@ nav .navbar .nav-links .links li .sub-menu {
   display: none;
 }
 
-nav .navbar .nav-links .links li .sub-menu li {
-  padding: 0 2vw;
-}
-
 nav .navbar .nav-links .links li .sub-menu li:hover {
   background-color: rgba(136, 0, 0, 0.2);
 }
 
 nav .navbar .nav-links .links li .sub-menu li a {
   color: #eeeeee;
+  width: 100%;
+  text-align: left;
+  padding-right: 2vw;
 }
 
 nav .navbar .nav-links .links li .sub-menu li a:hover {
