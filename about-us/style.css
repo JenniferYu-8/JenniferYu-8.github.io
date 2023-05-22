@@ -121,16 +121,15 @@ nav .navbar .nav-links .links li .sub-menu {
   display: none;
 }
 
-nav .navbar .nav-links .links li .sub-menu li {
-  padding: 0 2vw;
-}
-
 nav .navbar .nav-links .links li .sub-menu li:hover {
   background-color: rgba(136, 0, 0, 0.2);
 }
 
 nav .navbar .nav-links .links li .sub-menu li a {
   color: #eeeeee;
+  width: 100%;
+  text-align: left;
+  padding-right: 2vw;
 }
 
 nav .navbar .nav-links .links li .sub-menu li a:hover {
@@ -216,7 +215,7 @@ nav.scroll {
 }
 
 .body {
-  padding: 15vh 12vw;
+  padding: 6vh 12vw;
   background-color: #eeeeee;
   font-size: 1.05em;
   line-height: 3.8vh;
@@ -224,12 +223,113 @@ nav.scroll {
 
 .body h2 {
   font-family: 'proxima_nova_bold';
-  padding-bottom: 5vh;
+  padding: 5vh 0 3vh 0;
 }
 
 .body p {
   text-align: justify;
-  text-justify: inter-word;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 12vh;
+  width: 80%;
+  margin: auto;
+  gap: 0.8vw;
+}
+
+.flex-container .flex-child {
+  width: 50%;
+  height: auto;
+  position: relative;
+  border-radius: 40px 40px 0 40px;
+}
+
+.flex-container .flex-child p {
+  padding: 5vh 5vw;
+  text-align: left;
+  vertical-align: middle;
+}
+
+#item1 {
+  background-color: #343434;
+  color: white;
+  width: 50%;
+  position: relative;
+}
+
+#toronto {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 5vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 40px 40px 40px;
+}
+
+.section {
+  border-radius: 50px;
+  background-color: #343434;
+}
+
+.section h2 {
+  font-family: 'proxima_nova_bold';
+  padding: 5vh 10% 2vh 10%;
+  color: #eeeeee;
+}
+
+.section p {
+  text-align: justify;
+  padding: 0 10%;
+  color: #eeeeee;
+}
+
+.flex-container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3vh auto;
+  border-radius: 50px;
+  background-color: #343434;
+}
+
+.flex-container2 .flex-child {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+#hotel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 0 0 50px;
+  padding: 1em 0.5em 1em 1em;
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 50px 0;
+  padding: 1em 1em 1em 0.5em;
+}
+
+a {
+  color: #eeeeee;
+  font-family: 'proxima_nova_rgregular';
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+a:hover {
+  -webkit-filter: drop-shadow(0 0 5px #822726);
+          filter: drop-shadow(0 0 5px #822726);
 }
 
 .footer {
