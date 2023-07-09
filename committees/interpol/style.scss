@@ -5,12 +5,12 @@ $darkGrey: #343434;
 
 @font-face {
     font-family: 'proxima_nova_rgregular';
-    src: url(../proxima.otf);
+    src: url(../../proxima.otf);
 }
 
 @font-face {
     font-family: 'proxima_nova_bold';
-    src: url(../proxima-bold.otf);
+    src: url(../../proxima-bold.otf);
 }
 
 * {
@@ -208,46 +208,99 @@ nav.scroll {
 
 h2 {
     font-family: 'proxima_nova_bold';
-    font-size: 3em; // FJ CHANGE TO 2em FOR THE ACC PAGE
-    padding-top: 10vh;
+    font-size: 2em; // FJ CHANGE TO 2em FOR THE ACC PAGE
     text-align: center;
 }
 
-// DELETE THE SECTON BELOW FOR THE ACC PAGE
-p {
-    text-align: center;
-    font-size: 2em;
-    padding: 5vh 10vw;
+// INSERT PAGE-SPECIFIC STYLES HERE
+.section {
+    padding: 12vh 12vw;
+
+    p {
+        text-align: justify;
+        line-height: 2em;
+        text-justify: inter-word; 
+    }
 }
 
-.icon-container {
+.grey-section {
+    background-color: $darkGrey;
+    color: $white;
+
+}
+
+.flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 3vh 40vw;
+    padding: 3vh 5vw;
 
-    a {
-        text-decoration:none;
-        color: $darkRed;
-        transition:0.5s;
-        padding-bottom: 10vh;
+    img {
+        width: 20vw;
+        // border: 5px solid $darkRed;
+    }
+
+    p {
+        font-size: 1.4em;
+        max-width: 20vw;
+        text-align: center;
+        padding-top: 2vh;
+    }
+
+    .pos {
+        color: #E89695;
+        font-size: 1.2em;
+        padding-top: 0;
+    }
+
+    .img-wrap {
+        position: relative;
+        width: 20vw;
+
+        .bio-layer {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $darkGrey;
+            color: #fff;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: scroll;
+          
+            /* transition effect. not necessary */
+            transition: opacity .2s, visibility .2s;
+        }
+
+        .bio {
+            position: absolute;
+            top: 0;
+            padding: 1em;
+            transition: .2s;
+            transform: translateY(1em);
+            font-size: 1em;
+            line-height: 1.2em;
+            text-align: left;
+        }
 
         &:hover {
-            color:$lightRed;
-        }
+            .bio-layer {
+                visibility: visible;
+                opacity: 1;
+            }
 
-        i {
-            font-size:5em;
-            margin:0% 1%;       
+            .bio {
+                transform: translateY(0);
+            }
         }
     }
+    
+
 }
-// ^^^ DELETE THIS SECTION FOR THE ACC PAGE
-
-// INSERT PAGE-SPECIFIC STYLES HERE
-
-
-
 
 
 

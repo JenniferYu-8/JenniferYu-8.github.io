@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'proxima_nova_rgregular';
-  src: url(../proxima.otf);
+  src: url(../../proxima.otf);
 }
 
 @font-face {
   font-family: 'proxima_nova_bold';
-  src: url(../proxima-bold.otf);
+  src: url(../../proxima-bold.otf);
 }
 
 * {
@@ -217,14 +217,27 @@ nav.scroll {
 
 .body {
   background-color: #eeeeee;
-  padding: 0 12vw;
 }
 
 h2 {
   font-family: 'proxima_nova_bold';
   font-size: 2em;
-  padding-top: 10vh;
   text-align: center;
+}
+
+.section {
+  padding: 12vh 12vw;
+}
+
+.section p {
+  text-align: justify;
+  line-height: 2em;
+  text-justify: inter-word;
+}
+
+.grey-section {
+  background-color: #343434;
+  color: #eeeeee;
 }
 
 .flex-container {
@@ -238,43 +251,77 @@ h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 2vh 0;
+  padding: 3vh 5vw;
+}
+
+.flex-container img {
+  width: 20vw;
+}
+
+.flex-container p {
+  font-size: 1.4em;
+  max-width: 20vw;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+.flex-container .pos {
+  color: #E89695;
+  font-size: 1.2em;
+  padding-top: 0;
 }
 
 .flex-container .img-wrap {
   position: relative;
-  width: 35vw;
-  text-align: center;
+  width: 20vw;
 }
 
-.flex-container .img-wrap img {
-  width: 100%;
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
-}
-
-.flex-container .img-wrap .committee {
-  color: #eeeeee;
-  font-size: 2em;
-  text-transform: uppercase;
-  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+.flex-container .img-wrap .bio-layer {
   position: absolute;
-  width: 100%;
-  top: 45%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #343434;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: scroll;
+  /* transition effect. not necessary */
+  -webkit-transition: opacity .2s, visibility .2s;
+  transition: opacity .2s, visibility .2s;
 }
 
-.flex-container .img-wrap:hover {
-  -webkit-filter: drop-shadow(0 0 5px #411313);
-          filter: drop-shadow(0 0 5px #411313);
+.flex-container .img-wrap .bio {
+  position: absolute;
+  top: 0;
+  padding: 1em;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: translateY(1em);
+          transform: translateY(1em);
+  font-size: 1em;
+  line-height: 1.2em;
+  text-align: left;
 }
 
-.flex-container .img-wrap:hover .committee {
-  -webkit-filter: drop-shadow(0 0 5px #411313);
-          filter: drop-shadow(0 0 5px #411313);
+.flex-container .img-wrap:hover .bio-layer {
+  visibility: visible;
+  opacity: 1;
 }
 
-.bottom {
-  padding-bottom: 12vh;
+.flex-container .img-wrap:hover .bio {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .footer {
