@@ -219,48 +219,141 @@ nav.scroll {
   background-color: #eeeeee;
 }
 
-h2 {
+.section {
+  padding: 12vh 12vw;
+}
+
+.section h2 {
   font-family: 'proxima_nova_bold';
-  font-size: 3em;
-  padding-top: 10vh;
-  text-align: center;
-}
-
-p {
-  text-align: center;
   font-size: 2em;
-  padding: 5vh 10vw;
+  text-align: center;
+  padding-bottom: 3vh;
 }
 
-.icon-container {
+.section h3 {
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+  padding: 3vh 0 1vh 0;
+}
+
+.section p {
+  text-align: justify;
+  line-height: 2em;
+}
+
+.section ul {
+  line-height: 2em;
+  padding-left: 3vw;
+}
+
+.grey-section {
+  background-color: #343434;
+  color: #eeeeee;
+}
+
+#event-sched {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #822726;
+  color: #eeeeee;
+}
+
+#event-sched th, #event-sched td {
+  border-collapse: collapse;
+  padding: 2vh 1vw;
+}
+
+#event-sched th {
+  background-color: #411313;
+  color: #eeeeee;
+}
+
+#event-sched .day {
+  background-color: #343434;
+  color: #eeeeee;
+  font-family: 'proxima_nova_bold';
+  font-size: 2em;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+#event-sched .activities {
+  background-color: #bbb;
+  color: black;
+  text-align: center;
+}
+
+#event-sched .nothing {
+  background-color: #ddd;
+  color: black;
+}
+
+#event-sched tr:nth-child(even) {
+  background-color: #411313;
+  color: #eeeeee;
+}
+
+.button {
+  background-color: #822726;
+  color: #eeeeee;
+  border-radius: 50px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.button a {
+  color: #eeeeee;
+  font-size: 1.3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 3vh 40vw;
-}
-
-.icon-container a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-decoration: none;
-  color: #411313;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-bottom: 10vh;
+  padding: 2vh 5vw;
+  height: 100%;
+  width: 100%;
 }
 
-.icon-container a:hover {
-  color: #822726;
+.button:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-filter: drop-shadow(0 0 3px #411313);
+          filter: drop-shadow(0 0 3px #411313);
 }
 
-.icon-container a i {
-  font-size: 5em;
-  margin: 0% 1%;
+#delivery-sched {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #bbb;
+}
+
+#delivery-sched th, #delivery-sched td {
+  border-collapse: collapse;
+  padding: 2vh 1vw;
+  text-align: center;
+}
+
+#delivery-sched th {
+  background-color: #822726;
+  color: #eeeeee;
+}
+
+#delivery-sched tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+#delivery-sched .day {
+  background-color: #343434;
+  color: #eeeeee;
+  font-family: 'proxima_nova_bold';
+  text-align: center;
+  padding-top: 2vh;
 }
 
 .footer {
