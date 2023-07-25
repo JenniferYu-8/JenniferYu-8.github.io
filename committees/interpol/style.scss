@@ -1,14 +1,16 @@
-$darkRed: #411313; // #822726
+$darkRed: #411313; // # rgb(65, 19, 19)
+$lightRed: #822726;
 $white: #eeeeee; // rgb(245, 245, 245)
+$darkGrey: #343434;
 
 @font-face {
     font-family: 'proxima_nova_rgregular';
-    src: url(proxima.otf);
+    src: url(../../proxima.otf);
 }
 
 @font-face {
     font-family: 'proxima_nova_bold';
-    src: url(proxima-bold.otf);
+    src: url(../../proxima-bold.otf);
 }
 
 * {
@@ -20,11 +22,11 @@ $white: #eeeeee; // rgb(245, 245, 245)
 }
 
 .background-image {
-    background-image: linear-gradient(rgba(5, 5, 5, 0.8), rgba(10, 10, 10, 0.7)), url("/images/background.png") !important;
+    background-image: linear-gradient(rgba(5, 5, 5, 0.8), rgba(10, 10, 10, 0.7)), url("/images/background.png") !important; // CHANGE IMAGE
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 40vh;
     // overflow: hidden; // play with later
 }
 
@@ -35,6 +37,7 @@ nav {
     width: 100%;
     height: 12vh;
     background: transparent;
+    z-index: 1000;
 
     .navbar {
         // max-width: 1250px; // ?
@@ -68,7 +71,6 @@ nav {
                     display: flex;
                     align-items: center;
                     list-style: none;
-                    // padding: 0.1em 1em;
                     padding: 0.2em 1em;
                     white-space: nowrap;
 
@@ -179,7 +181,7 @@ nav.scroll {
 }
 
 .hero {
-    height:100vh;
+    height:40vh;
     // text-shadow: 0 0 5px $darkRed, 0 0 5px $darkRed;
 
     .hero-container {
@@ -187,106 +189,122 @@ nav.scroll {
         text-align: center;
         margin-bottom: 10vh;
     }
-
-    .hero-info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1vh; 
-
-        i {
-            font-size: 1.5em;
-            padding-right: 0.6em;
-            color: $white;
-        }
-
-    }
 }
 
 .hero-content {
     color: $white;
-    padding: 30vh 0;
+    padding: 18vh 0;
 
     h1 {
         color: $white;
-        font-size: 5em;
+        font-size: 4em;
     }
-
-    h2 {
-        color: $white;
-        font-size: 1.5em;
-    }
-
-    p {
-        color: $white;
-        font-size: 1.6em;
-        font-style: italic;
-        padding: 2vh;
-        
-    }
-
-    .hero-countdown {
-        background-color: rgba(50,50,50, 0.5);
-        width: 600px;
-        margin: 3vh auto; // 2em
-        margin-bottom: 8vh;
-        border-radius: 40px;
-    }
-
-    li {
-        display: inline-block;
-        font-size: 1.5em;
-        list-style-type: none;
-        padding: 1em;
-        border-radius: 5px;
-
-      }
-      
-      li span {
-        display: block;
-        font-size: 3em;
-      }
 }
 
-.letter-container {
-    padding: 15vh 12vw;
+// Page content styles
+.body {
     background-color: $white;
-    font-size: 1.05em;
-    line-height: 3.8vh;
+}
 
-    h2 {
-        font-family: 'proxima_nova_bold';
-        padding-bottom: 5vh;
-    }
+h2 {
+    font-family: 'proxima_nova_bold';
+    font-size: 2em; // FJ CHANGE TO 2em FOR THE ACC PAGE
+    text-align: center;
+}
+
+// INSERT PAGE-SPECIFIC STYLES HERE
+.section {
+    padding: 12vh 12vw;
 
     p {
         text-align: justify;
-        text-justify: inter-word;
+        line-height: 2em;
+        text-justify: inter-word; 
     }
+}
 
-    .indent {
-        text-indent: 2vw;
-    }
+.grey-section {
+    background-color: $darkGrey;
+    color: $white;
 
-    .bold {
-        font-family: 'proxima_nova_bold';
-    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3vh 5vw;
 
     img {
-        height: 15vh;
+        width: 20vw;
+        // border: 5px solid $darkRed;
     }
 
-    #sec-gen {
-        float: right;
-        padding-left: 5vh;
-
-        height: 55vh;
-        width: auto;
+    p {
+        font-size: 1.4em;
+        max-width: 20vw;
+        text-align: center;
+        padding-top: 2vh;
     }
+
+    .pos {
+        color: #E89695;
+        font-size: 1.2em;
+        padding-top: 0;
+    }
+
+    .img-wrap {
+        position: relative;
+        width: 20vw;
+
+        .bio-layer {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $darkGrey;
+            color: #fff;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: scroll;
+          
+            /* transition effect. not necessary */
+            transition: opacity .2s, visibility .2s;
+        }
+
+        .bio {
+            position: absolute;
+            top: 0;
+            padding: 1em;
+            transition: .2s;
+            transform: translateY(1em);
+            font-size: 1em;
+            line-height: 1.2em;
+            text-align: left;
+        }
+
+        &:hover {
+            .bio-layer {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .bio {
+                transform: translateY(0);
+            }
+        }
+    }
+    
+
 }
 
 
 
+// footer
 .footer{
     background: $darkRed;
     padding: 3vh 0;
@@ -476,40 +494,6 @@ nav.scroll {
 
     .hero-content {
         padding: 18vh 0; 
-
-        .hero-info {
-            i {
-                font-size: 1.5em;
-            }
-        }
-
-        #hero-info-top {
-            padding-top: 8vh;
-        }
-
-        h1 {
-            font-size: 4em;
-        }
-
-        h2 {
-            font-size: 1.5em;
-        }
-
-        p {
-            font-size: 1.5em; // iw
-        }
-
-        .hero-countdown {
-            width: 400px; // iw
-        }
-
-        li {
-            font-size: 1em; // iw
-        }
-          
-        li span {
-        font-size: 3em; // iw
-        }
     }
 }
 
@@ -544,34 +528,14 @@ nav.scroll {
             }
         }
 
-        #hero-info-top {
-            padding-top: 8vh;
-        }
-
         h1 {
             font-size: 2em;
-        }
-
-        h2 {
-            font-size: 1em;
-        }
-
-        p {
-            font-size: 1em; // iw
         }
 
         .hero-countdown {
             width: 20em; // iw
         }
 
-        li {
-            font-size: 1em; // iw
-            padding: 1em 0.5em;
-        }
-          
-        li span {
-            font-size: 2em; // iw
-        }
     }
 }
 
@@ -586,10 +550,6 @@ nav.scroll {
             }
         }
 
-        #hero-info-top {
-            padding-top: 8vh;
-        }
-
         h1 {
             font-size: 2em;
         }
@@ -600,19 +560,6 @@ nav.scroll {
 
         p {
             font-size: 1em; // iw
-        }
-
-        .hero-countdown {
-            width: 15em; // iw
-        }
-
-        li {
-            font-size: 0.8em; // iw
-            padding: 1em 0.5em;
-          }
-          
-        li span {
-        font-size: 1.6em; // iw
         }
     }
 }

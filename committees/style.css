@@ -217,22 +217,17 @@ nav.scroll {
 
 .body {
   background-color: #eeeeee;
+  padding: 0 12vw;
 }
 
 h2 {
   font-family: 'proxima_nova_bold';
-  font-size: 3em;
+  font-size: 2em;
   padding-top: 10vh;
   text-align: center;
 }
 
-p {
-  text-align: center;
-  font-size: 2em;
-  padding: 5vh 10vw;
-}
-
-.icon-container {
+.flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -243,24 +238,43 @@ p {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 3vh 40vw;
+  padding: 2vh 0;
 }
 
-.icon-container a {
-  text-decoration: none;
-  color: #411313;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-bottom: 10vh;
+.flex-container .img-wrap {
+  position: relative;
+  width: 35vw;
+  text-align: center;
 }
 
-.icon-container a:hover {
-  color: #822726;
+.flex-container .img-wrap img {
+  width: 100%;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
-.icon-container a i {
-  font-size: 5em;
-  margin: 0% 1%;
+.flex-container .img-wrap .committee {
+  color: #eeeeee;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+}
+
+.flex-container .img-wrap:hover {
+  -webkit-filter: drop-shadow(0 0 5px #411313);
+          filter: drop-shadow(0 0 5px #411313);
+}
+
+.flex-container .img-wrap:hover .committee {
+  -webkit-filter: drop-shadow(0 0 5px #411313);
+          filter: drop-shadow(0 0 5px #411313);
+}
+
+.bottom {
+  padding-bottom: 12vh;
 }
 
 .footer {
