@@ -281,6 +281,19 @@ h2 {
             border-collapse: collapse;
             padding: 2vh 1vw;
         }
+
+        .middle {
+            text-align: center;
+        }
+    }
+
+    .email {
+        font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+
+        a {
+            color: #E89695;
+            text-decoration: none;
+        }
     }
 
 }

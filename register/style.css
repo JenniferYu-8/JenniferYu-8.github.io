@@ -310,6 +310,19 @@ h2 {
   padding: 2vh 1vw;
 }
 
+.grey-section table .middle {
+  text-align: center;
+}
+
+.grey-section .email {
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+}
+
+.grey-section .email a {
+  color: #E89695;
+  text-decoration: none;
+}
+
 .white-section ol {
   padding: 0 0 5vh 5vw;
   line-height: 2em;
