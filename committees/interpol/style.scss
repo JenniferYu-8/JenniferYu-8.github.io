@@ -223,13 +223,30 @@ h2 {
     }
 }
 
+.flex-container-topics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // padding: 3vh 5vw;
+
+    h3 {
+        text-align: center;
+        font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+        padding-bottom: 2vh;
+    }
+
+    .flex-child-topic {
+        width: 45%;
+    }
+}
+
 .grey-section {
     background-color: $darkGrey;
     color: $white;
 
 }
 
-.flex-container {
+.flex-container-dais {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
