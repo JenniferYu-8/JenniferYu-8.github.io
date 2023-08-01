@@ -321,10 +321,9 @@ iframe {
 }
 
 a {
-  color: #eeeeee;
+  color: #E89695;
   font-family: 'proxima_nova_rgregular';
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: none;
 }
 
 a:hover {
