@@ -283,10 +283,6 @@ nav.scroll {
   text-justify: inter-word;
 }
 
-.letter-container .indent {
-  text-indent: 2vw;
-}
-
 .letter-container .bold {
   font-family: 'proxima_nova_bold';
 }
@@ -526,6 +522,18 @@ nav.scroll {
     line-height: 1em;
     padding-bottom: 0;
   }
+  nav .navbar .navbar-toggle .bar {
+    width: 25px;
+    height: 1px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #eeeeee;
+    border: solid #eeeeee;
+    border-radius: 50px;
+    display: block;
+    cursor: pointer;
+  }
   .hero-content {
     padding: 18vh 0;
   }
@@ -556,6 +564,12 @@ nav.scroll {
   }
   .hero-content li span {
     font-size: 2em;
+  }
+  .letter-container #sec-gen {
+    margin: auto;
+    padding-left: 0;
+    width: 100%;
+    height: auto;
   }
 }
 
