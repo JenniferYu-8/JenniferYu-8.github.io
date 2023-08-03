@@ -224,6 +224,10 @@ h2 {
   font-size: 2em;
 }
 
+.center {
+  text-align: center;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,7 +239,6 @@ h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 10vh 12vw;
 }
 
 .flex-container .flex-child {
