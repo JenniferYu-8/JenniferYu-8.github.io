@@ -281,6 +281,12 @@ h2 {
         border: none;
         max-height: 0;
         transition: max-height 0.2s ease-out;
+
+        a {
+            color: $lightRed;
+            text-decoration: none;
+            font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+        }
     }
 
     .last-a {

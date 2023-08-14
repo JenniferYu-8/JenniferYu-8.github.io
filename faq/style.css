@@ -291,6 +291,12 @@ h2 {
   transition: max-height 0.2s ease-out;
 }
 
+.accordion-container .panel a {
+  color: #822726;
+  text-decoration: none;
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+}
+
 .accordion-container .last-a {
   border-bottom: 2px solid #411313;
 }
