@@ -324,6 +324,7 @@ h2 {
 .grey-section .email a {
   color: #E89695;
   text-decoration: none;
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 }
 
 .white-section ol {
@@ -342,6 +343,7 @@ h2 {
 .white-section p a {
   color: #822726;
   text-decoration: none;
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 }
 
 .flex-child-2 {

@@ -121,16 +121,15 @@ nav .navbar .nav-links .links li .sub-menu {
   display: none;
 }
 
-nav .navbar .nav-links .links li .sub-menu li {
-  padding: 0 2vw;
-}
-
 nav .navbar .nav-links .links li .sub-menu li:hover {
   background-color: rgba(136, 0, 0, 0.2);
 }
 
 nav .navbar .nav-links .links li .sub-menu li a {
   color: #eeeeee;
+  width: 100%;
+  text-align: left;
+  padding-right: 2vw;
 }
 
 nav .navbar .nav-links .links li .sub-menu li a:hover {
@@ -221,46 +220,85 @@ nav.scroll {
 
 h2 {
   font-family: 'proxima_nova_bold';
-  font-size: 3em;
+  font-size: 2em;
   padding-top: 10vh;
   text-align: center;
 }
 
-p {
-  text-align: center;
-  font-size: 2em;
-  padding: 5vh 10vw;
+.accordion-container {
+  padding: 10vh 12vw;
+  /* Style the buttons that are used to open and close the accordion panel */
+  /* Style the accordion panel. Note: hidden by default */
 }
 
-.icon-container {
+.accordion-container p {
+  background-color: #eeeeee;
+  font-size: 1.05em;
+  line-height: 3.8vh;
+  padding-bottom: 5vh;
+  padding-top: 2vh;
+}
+
+.accordion-container .accordion {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  border-top: 2px solid #411313;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 3vh 40vw;
+  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+  padding: 2vh 0;
+  font-size: 1.3em;
 }
 
-.icon-container a {
-  text-decoration: none;
+.accordion-container .accordion p {
+  padding: 0 2vw;
+}
+
+.accordion-container .accordion .fa-angle-down {
+  padding: 0.5vh 0;
   color: #411313;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-bottom: 10vh;
 }
 
-.icon-container a:hover {
+.accordion-container .last-q {
+  border-bottom: 2px solid #411313;
+}
+
+.accordion-container .active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.15s linear;
+  transition: -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear;
+  transition: transform 0.15s linear, -webkit-transform 0.15s linear;
+}
+
+.accordion-container .clear {
+  border-bottom: none;
+}
+
+.accordion-container .panel {
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  border: none;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-container .panel a {
   color: #822726;
+  text-decoration: none;
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 }
 
-.icon-container a i {
-  font-size: 5em;
-  margin: 0% 1%;
+.accordion-container .last-a {
+  border-bottom: 2px solid #411313;
 }
 
 .footer {
