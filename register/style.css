@@ -327,6 +327,10 @@ h2 {
   font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 }
 
+.grey-section .email a:hover {
+  color: #ebafae;
+}
+
 .white-section ol {
   padding: 0 0 5vh 5vw;
   line-height: 2em;
@@ -344,6 +348,10 @@ h2 {
   color: #822726;
   text-decoration: none;
   font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+}
+
+.white-section p a:hover {
+  color: #9f4745;
 }
 
 .flex-child-2 {

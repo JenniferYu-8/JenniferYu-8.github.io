@@ -297,6 +297,10 @@ h2 {
   font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 }
 
+.accordion-container .panel a:hover {
+  color: #9f4745;
+}
+
 .accordion-container .last-a {
   border-bottom: 2px solid #411313;
 }

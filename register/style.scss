@@ -297,6 +297,10 @@ h2 {
             color: #E89695;
             text-decoration: none;
             font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+
+            &:hover {
+                color: #ebafae;
+            }
         }
     }
 
@@ -319,6 +323,10 @@ h2 {
             color: $lightRed;
             text-decoration: none;
             font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+
+            &:hover {
+                color: #9f4745;
+            }
         }
     }
 }
