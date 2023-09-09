@@ -605,6 +605,67 @@ h2 {
             font-size: 1em; // iw
         }
     }
+
+    .flex-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+
+        .member {
+            width: 100%;
+            padding: 10px 0;
+            // white-space: nowrap; // doesn't work
+
+            p {
+                margin: auto;
+                font-size: 1em;
+                line-height: 1.1em;
+                text-align: center;
+
+            }
+
+            .mail {
+                font-size: 1em;
+                margin-left: 100px;
+            }
+
+            .img-wrap {
+                margin: auto;
+                position: relative;
+                padding: 0px;
+    
+                img {
+                    width: 200px;
+                    margin-left: -65px;
+                }
+    
+                .bio-layer {
+                    width: 200px;
+                    margin-left: -65px;
+                    padding: 0px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+    
+                    .bio {
+                        width: 200px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        padding: 0px;
+                        font-size: 0.8em;
+                    }
+                }
+    
+    
+            }
+        }
+
+
+    }
 }
 
 @media screen and (max-width: 320px) {
