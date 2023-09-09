@@ -1,5 +1,6 @@
 $darkRed: #411313; // #822726
 $white: #eeeeee; // rgb(245, 245, 245)
+$lightRed: #822726;
 
 @font-face {
     font-family: 'proxima_nova_rgregular';
@@ -375,6 +376,7 @@ nav.scroll {
                     li {
                         width: 100%;
                         height: auto;
+                        display: block;
                 
                         a {
                             font-size: 1.2em;
@@ -387,11 +389,13 @@ nav.scroll {
                         .sub-menu {
                             display: none;
                             position: relative;
-                            font-size: 0.8em;
+                            font-size: 0.6em;
                             width: 100%;
                             top: 0;
                             right: 0;
+                            padding-top: 0.5em;
                             padding-bottom: 1em;
+                            // border-bottom: solid $lightRed;
                         }
                     }
 
@@ -427,8 +431,8 @@ nav.scroll {
             }
 
             .navbar-toggle .bar {
-                width: 25px;
-                height: 3px;
+                width: 30px; // was 25
+                height: 2px; // was 3
                 margin: 5px auto;
                 transition: all 0.3s ease-in-out;
                 background: $white;
@@ -441,7 +445,7 @@ nav.scroll {
             #mobile-menu {
                 position: absolute;
                 top: 20%;
-                right: 10%; // was 5%
+                right: 5%;
                 transform: translate(5%, 20%);
             }
 
