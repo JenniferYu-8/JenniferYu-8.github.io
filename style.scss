@@ -427,8 +427,8 @@ nav.scroll {
             }
 
             .navbar-toggle .bar {
-                width: 25px;
-                height: 3px;
+                width: 30px; // was 25
+                height: 2px;
                 margin: 5px auto;
                 transition: all 0.3s ease-in-out;
                 background: $white;
@@ -441,7 +441,7 @@ nav.scroll {
             #mobile-menu {
                 position: absolute;
                 top: 20%;
-                right: 10%; // was 5%
+                right: 5%;
                 transform: translate(5%, 20%);
             }
 
