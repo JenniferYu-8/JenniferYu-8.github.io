@@ -539,15 +539,6 @@ a:hover {
   .hero-content p {
     font-size: 1.5em;
   }
-  .hero-content .hero-countdown {
-    width: 400px;
-  }
-  .hero-content li {
-    font-size: 1em;
-  }
-  .hero-content li span {
-    font-size: 3em;
-  }
   .flex-container {
     width: 100%;
     -webkit-box-orient: vertical;
