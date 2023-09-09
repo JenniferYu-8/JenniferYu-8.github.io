@@ -432,7 +432,7 @@ nav.scroll {
                 margin: 5px auto;
                 transition: all 0.3s ease-in-out;
                 background: $white;
-                border: solid $white;
+                // border: solid $white;
                 border-radius: 50px;
                 display: block;
                 cursor: pointer;
@@ -441,7 +441,7 @@ nav.scroll {
             #mobile-menu {
                 position: absolute;
                 top: 20%;
-                right: 5%;
+                right: 10%; // was 5%
                 transform: translate(5%, 20%);
             }
 
@@ -634,5 +634,4 @@ nav.scroll {
         }
     }
 }
-
 
