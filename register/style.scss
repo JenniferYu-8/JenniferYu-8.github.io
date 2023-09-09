@@ -436,6 +436,7 @@ h2 {
                     li {
                         width: 100%;
                         height: auto;
+                        display: block;
                 
                         a {
                             font-size: 1.2em;
@@ -448,11 +449,13 @@ h2 {
                         .sub-menu {
                             display: none;
                             position: relative;
-                            font-size: 0.8em;
+                            font-size: 0.6em;
                             width: 100%;
                             top: 0;
                             right: 0;
+                            padding-top: 0.5em;
                             padding-bottom: 1em;
+                            // border-bottom: solid $lightRed;
                         }
                     }
 
@@ -488,12 +491,12 @@ h2 {
             }
 
             .navbar-toggle .bar {
-                width: 25px;
-                height: 3px;
+                width: 30px; // was 25
+                height: 2px; // was 3
                 margin: 5px auto;
                 transition: all 0.3s ease-in-out;
                 background: $white;
-                border: solid $white;
+                // border: solid $white;
                 border-radius: 50px;
                 display: block;
                 cursor: pointer;
@@ -526,6 +529,16 @@ h2 {
         }
     }
 
+    .flex-container {
+        .flex-child {
+            margin: 5px;
+
+            a {
+                padding: 20px;
+            }
+        }
+    }
+
 }
     
 
@@ -533,6 +546,46 @@ h2 {
 
     .hero-content {
         padding: 18vh 0; 
+
+        h1 {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.5em; // iw
+        }
+    }
+
+    .tables {
+        overflow-x: auto;
+        font-size: 0.55em;
+    }
+
+    .flex-container {
+        width: 100%;
+        flex-direction: column;
+
+        .flex-child-2 {
+            width: 100%;
+            padding-bottom: 40px;
+        }
+    }
+
+    .footer {
+        .row {
+            ul {
+                padding-bottom: 10px;
+
+                li {
+                    display:block;
+                    padding: 0.25em;
+                }
+            }
+        }
     }
 }
 
@@ -554,40 +607,41 @@ h2 {
                     }
                 }
             }
+
+            .navbar-toggle .bar {
+                width: 25px;
+                height: 1px;
+                margin: 5px auto;
+                transition: all 0.3s ease-in-out;
+                background: $white;
+                border: solid $white;
+                border-radius: 50px;
+                display: block;
+                cursor: pointer;
+            }
         }
     }
 
     .hero-content {
         padding: 18vh 0; 
 
-        .hero-info {
-            padding: 0.2em;
-            i {
-                font-size: 1em;
-            }
-        }
-
         h1 {
             font-size: 2em;
         }
 
-        .hero-countdown {
-            width: 20em; // iw
+        h2 {
+            font-size: 1em;
         }
 
+        p {
+            font-size: 1em; // iw
+        }
     }
 }
 
 @media screen and (max-width: 320px) {
     .hero-content {
         padding: 18vh 0; 
-
-        .hero-info {
-
-            i {
-                font-size: 1em;
-            }
-        }
 
         h1 {
             font-size: 2em;
