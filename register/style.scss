@@ -213,11 +213,14 @@ h2 {
 }
 
 // INSERT PAGE-SPECIFIC STYLES HERE
+.center {
+    text-align: center;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 10vh 12vw;
 
     .flex-child {
         background-color: $lightRed;
@@ -293,6 +296,11 @@ h2 {
         a {
             color: #E89695;
             text-decoration: none;
+            font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+
+            &:hover {
+                color: #ebafae;
+            }
         }
     }
 
@@ -314,6 +322,11 @@ h2 {
         a {
             color: $lightRed;
             text-decoration: none;
+            font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+
+            &:hover {
+                color: #9f4745;
+            }
         }
     }
 }

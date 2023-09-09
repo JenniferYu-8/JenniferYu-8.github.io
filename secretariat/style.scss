@@ -230,6 +230,10 @@ nav.scroll {
         a {
             color: $lightRed;
             text-decoration: none;
+
+            &:hover {
+                color: #9f4745;
+            }
         }
     }
 

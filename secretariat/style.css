@@ -254,6 +254,10 @@ nav.scroll {
   text-decoration: none;
 }
 
+.flex-container .mail a:hover {
+  color: #9f4745;
+}
+
 .flex-container .img-wrap {
   position: relative;
   width: 20vw;
