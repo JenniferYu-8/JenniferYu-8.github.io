@@ -1,15 +1,16 @@
 $darkRed: #411313; // # rgb(65, 19, 19)
 $lightRed: #822726;
 $white: #eeeeee; // rgb(245, 245, 245)
+$darkGrey: #343434;
 
 @font-face {
     font-family: 'proxima_nova_rgregular';
-    src: url(../proxima.otf);
+    src: url(../../proxima.otf);
 }
 
 @font-face {
     font-family: 'proxima_nova_bold';
-    src: url(../proxima-bold.otf);
+    src: url(../../proxima-bold.otf);
 }
 
 * {
@@ -106,7 +107,7 @@ nav {
                         display: none; 
 
                         li {
-                            // padding: 0 2vw;
+                            padding: 0 2vw;
 
                             &:hover {
                                 background-color: rgba(136, 0, 0, 0.2);
@@ -114,9 +115,6 @@ nav {
 
                             a {
                                 color: $white;
-                                width: 100%;
-                                text-align: left;
-                                padding-right: 2vw;
 
                                 &:hover {
                                     text-shadow: none;
@@ -211,96 +209,144 @@ nav.scroll {
 h2 {
     font-family: 'proxima_nova_bold';
     font-size: 2em; // FJ CHANGE TO 2em FOR THE ACC PAGE
-    padding-top: 10vh;
     text-align: center;
+    padding-bottom: 3vh;
 }
 
 // INSERT PAGE-SPECIFIC STYLES HERE
+.section {
+    padding: 12vh 12vw;
 
-.accordion-container {
-    padding: 10vh 12vw;
-    // h2 {
-    //     padding-bottom: 3vh;
-    // }
     p {
-        background-color: $white;
-        font-size: 1.05em;
-        line-height: 3.8vh;
-        padding-bottom: 5vh;
-        padding-top: 2vh;
+        text-align: justify;
+        line-height: 2em;
+        text-justify: inter-word; 
+    }
+}
+
+.flex-container-topics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // padding: 3vh 5vw;
+
+    h3 {
+        text-align: center;
+        font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+        padding-bottom: 2vh;
     }
 
-    /* Style the buttons that are used to open and close the accordion panel */
-    .accordion {
-        cursor: pointer;
-        width: 100%;
-        text-align: left;
-        border-left: none;
-        border-right: none;
-        border-bottom: none;
-        border-top: 2px solid $darkRed;
-        // transition: 0.4s;
-        display: flex;
-        font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
-        padding: 2vh 0;
+    .flex-child-topic {
+        width: 45%;
+    }
+}
+
+.button {
+    background-color: $lightRed;
+    color: $white;
+    border-radius: 50px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 2vh;
+
+    a {
+        color: $white;
         font-size: 1.3em;
-
-        p {
-            padding: 0 2vw;
-        }
-
-        .fa-angle-down {
-            padding: 0.5vh 0;
-            color: $darkRed;
-            // transform: rotate(0deg);
-            // transition: transform 1s linear;
-
-        }
-    }
-
-    .last-q {
-        border-bottom: 2px solid $darkRed;
-    }
-
-    // rotate arrow
-    .active {
-        transform: rotate(180deg);
-        transition: transform 0.15s linear;
-    }
-
-    .clear {
-        border-bottom: none;
-    }
-    
-    /* Style the accordion panel. Note: hidden by default */
-    .panel {
-        // background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 2vh 3vw;
+        height: 100%;
         width: 100%;
-        display: none;
-        overflow: hidden;
-        border: none;
-        max-height: 0;
-        transition: max-height 0.2s ease-out;
-
-        a {
-            color: $lightRed;
-            text-decoration: none;
-            font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
-
-            &:hover {
-                color: #9f4745;
-            }
-        }
     }
 
-    .last-a {
-        border-bottom: 2px solid $darkRed;
+    &:hover {
+        transform: scale(1.01);
+        filter: drop-shadow(0 0 3px $darkRed);
     }
+}
+
+.grey-section {
+    background-color: $darkGrey;
+    color: $white;
 
 }
 
+.flex-container-dais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3vh 5vw;
 
+    img {
+        width: 20vw;
+        // border: 5px solid $darkRed;
+    }
 
+    p {
+        font-size: 1.4em;
+        max-width: 20vw;
+        text-align: center;
+        padding-top: 2vh;
+    }
+
+    .pos {
+        color: #E89695;
+        font-size: 1.2em;
+        padding-top: 0;
+    }
+
+    .img-wrap {
+        position: relative;
+        width: 20vw;
+
+        .bio-layer {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $darkGrey;
+            color: #fff;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: scroll;
+          
+            /* transition effect. not necessary */
+            transition: opacity .2s, visibility .2s;
+        }
+
+        .bio {
+            position: absolute;
+            top: 0;
+            padding: 1em;
+            transition: .2s;
+            transform: translateY(1em);
+            font-size: 1em;
+            line-height: 1.2em;
+            text-align: left;
+        }
+
+        &:hover {
+            .bio-layer {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .bio {
+                transform: translateY(0);
+            }
+        }
+    }
+    
+
+}
 
 
 

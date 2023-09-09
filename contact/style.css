@@ -221,46 +221,80 @@ nav.scroll {
 
 h2 {
   font-family: 'proxima_nova_bold';
-  font-size: 3em;
+  font-size: 2em;
   padding-top: 10vh;
   text-align: center;
 }
 
-p {
-  text-align: center;
-  font-size: 2em;
-  padding: 5vh 10vw;
+.section {
+  padding: 12vh 12vw;
 }
 
-.icon-container {
+.section p {
+  text-align: center;
+  line-height: 2em;
+  text-justify: inter-word;
+}
+
+.section .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 3vh 40vw;
+  padding: 5vh 10vw;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.icon-container a {
-  text-decoration: none;
-  color: #411313;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-bottom: 10vh;
+.section .flex-child {
+  padding: 0 1em;
 }
 
-.icon-container a:hover {
+.section .name {
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+}
+
+.section .pos {
+  font-style: italic;
+}
+
+.section a {
   color: #822726;
+  text-decoration: none;
 }
 
-.icon-container a i {
-  font-size: 5em;
-  margin: 0% 1%;
+.section a:hover {
+  color: #9f4745;
+}
+
+.section .mail-bttn {
+  background-color: #822726;
+  color: #eeeeee;
+  border-radius: 25px;
+}
+
+.section .mail-bttn a {
+  font-size: 0.95em;
+  color: #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 2vh 2vw;
+}
+
+.section .mail-bttn:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-filter: drop-shadow(0 0 3px #411313);
+          filter: drop-shadow(0 0 3px #411313);
 }
 
 .footer {
