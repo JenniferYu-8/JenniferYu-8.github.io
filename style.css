@@ -453,7 +453,6 @@ nav.scroll {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: #eeeeee;
-    border: solid #eeeeee;
     border-radius: 50px;
     display: block;
     cursor: pointer;
@@ -461,7 +460,7 @@ nav.scroll {
   nav .navbar #mobile-menu {
     position: absolute;
     top: 20%;
-    right: 5%;
+    right: 10%;
     -webkit-transform: translate(5%, 20%);
             transform: translate(5%, 20%);
   }
