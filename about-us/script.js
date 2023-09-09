@@ -6,3 +6,14 @@ window.onscroll = () => {
     nav.className = 'scroll';
   }
 };
+
+const 
+    menu = document.querySelector("#mobile-menu"),
+    menuLinks = document.querySelector(".links"),
+    menuTop = document.querySelector(".navbar");
+
+menu.addEventListener("click", function() {
+    menu.classList.toggle("is-active");
+    menuLinks.classList.toggle("active");
+    menuTop.classList.toggle("active");
+})

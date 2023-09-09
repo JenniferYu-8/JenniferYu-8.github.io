@@ -211,7 +211,7 @@ nav.scroll {
     padding: 6vh 12vw;
     background-color: $white;
     font-size: 1.05em;
-    line-height: 3.8vh;
+    line-height: 2em;
 
     h2 {
         font-family: 'proxima_nova_bold';
@@ -417,6 +417,7 @@ a {
                     li {
                         width: 100%;
                         height: auto;
+                        display: block;
                 
                         a {
                             font-size: 1.2em;
@@ -429,11 +430,13 @@ a {
                         .sub-menu {
                             display: none;
                             position: relative;
-                            font-size: 0.8em;
+                            font-size: 0.6em;
                             width: 100%;
                             top: 0;
                             right: 0;
+                            padding-top: 0.5em;
                             padding-bottom: 1em;
+                            // border-bottom: solid $lightRed;
                         }
                     }
 
@@ -469,12 +472,12 @@ a {
             }
 
             .navbar-toggle .bar {
-                width: 25px;
-                height: 3px;
+                width: 30px; // was 25
+                height: 2px; // was 3
                 margin: 5px auto;
                 transition: all 0.3s ease-in-out;
                 background: $white;
-                border: solid $white;
+                // border: solid $white;
                 border-radius: 50px;
                 display: block;
                 cursor: pointer;
@@ -507,6 +510,10 @@ a {
         }
     }
 
+    .flex-container {
+        width: 100%;
+    }
+
 }
     
 
@@ -514,6 +521,74 @@ a {
 
     .hero-content {
         padding: 18vh 0; 
+
+        .hero-info {
+            i {
+                font-size: 1.5em;
+            }
+        }
+
+        #hero-info-top {
+            padding-top: 8vh;
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1.5em; // iw
+        }
+
+        .hero-countdown {
+            width: 400px; // iw
+        }
+
+        li {
+            font-size: 1em; // iw
+        }
+          
+        li span {
+        font-size: 3em; // iw
+        }
+    }
+
+    .flex-container {
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding-bottom: 3em;
+
+        #item1 {
+            width: 100%;
+            border-radius: 40px 40px 0 0;
+        }
+
+        #toronto {
+            top: 10px;
+            border-radius: 0 0 40px 40px;
+        }
+
+        .flex-child {
+            width: 100%;
+        }
+    }
+
+    .footer {
+        .row {
+            ul {
+                padding-bottom: 10px;
+
+                li {
+                    display:block;
+                    padding: 0.25em;
+                }
+            }
+        }
     }
 }
 
@@ -535,40 +610,23 @@ a {
                     }
                 }
             }
+
+            .navbar-toggle .bar {
+                width: 25px;
+                height: 1px;
+                margin: 5px auto;
+                transition: all 0.3s ease-in-out;
+                background: $white;
+                border: solid $white;
+                border-radius: 50px;
+                display: block;
+                cursor: pointer;
+            }
         }
     }
 
     .hero-content {
         padding: 18vh 0; 
-
-        .hero-info {
-            padding: 0.2em;
-            i {
-                font-size: 1em;
-            }
-        }
-
-        h1 {
-            font-size: 2em;
-        }
-
-        .hero-countdown {
-            width: 20em; // iw
-        }
-
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .hero-content {
-        padding: 18vh 0; 
-
-        .hero-info {
-
-            i {
-                font-size: 1em;
-            }
-        }
 
         h1 {
             font-size: 2em;
@@ -584,4 +642,21 @@ a {
     }
 }
 
+@media screen and (max-width: 320px) {
+    .hero-content {
+        padding: 18vh 0; 
+
+        h1 {
+            font-size: 2em;
+        }
+
+        h2 {
+            font-size: 1em;
+        }
+
+        p {
+            font-size: 1em; // iw
+        }
+    }
+}
 
