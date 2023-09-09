@@ -464,6 +464,7 @@ h2 {
   nav .navbar .nav-links .links li {
     width: 100%;
     height: auto;
+    display: block;
   }
   nav .navbar .nav-links .links li a {
     font-size: 1.2em;
@@ -474,10 +475,11 @@ h2 {
   nav .navbar .nav-links .links li .sub-menu {
     display: none;
     position: relative;
-    font-size: 0.8em;
+    font-size: 0.6em;
     width: 100%;
     top: 0;
     right: 0;
+    padding-top: 0.5em;
     padding-bottom: 1em;
   }
   nav .navbar .nav-links .links #navbar-button {
@@ -511,13 +513,12 @@ h2 {
     font-size: 1.6rem;
   }
   nav .navbar .navbar-toggle .bar {
-    width: 25px;
-    height: 3px;
+    width: 30px;
+    height: 2px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: #eeeeee;
-    border: solid #eeeeee;
     border-radius: 50px;
     display: block;
     cursor: pointer;
@@ -545,11 +546,48 @@ h2 {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
+  .flex-container .flex-child {
+    margin: 5px;
+  }
+  .flex-container .flex-child a {
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 769px) {
   .hero-content {
     padding: 18vh 0;
+  }
+  .hero-content h1 {
+    font-size: 4em;
+  }
+  .hero-content h2 {
+    font-size: 1.5em;
+  }
+  .hero-content p {
+    font-size: 1.5em;
+  }
+  .tables {
+    overflow-x: auto;
+    font-size: 0.55em;
+  }
+  .flex-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-container .flex-child-2 {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .footer .row ul {
+    padding-bottom: 10px;
+  }
+  .footer .row ul li {
+    display: block;
+    padding: 0.25em;
   }
 }
 
@@ -562,29 +600,35 @@ h2 {
     line-height: 1em;
     padding-bottom: 0;
   }
+  nav .navbar .navbar-toggle .bar {
+    width: 25px;
+    height: 1px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #eeeeee;
+    border: solid #eeeeee;
+    border-radius: 50px;
+    display: block;
+    cursor: pointer;
+  }
   .hero-content {
     padding: 18vh 0;
-  }
-  .hero-content .hero-info {
-    padding: 0.2em;
-  }
-  .hero-content .hero-info i {
-    font-size: 1em;
   }
   .hero-content h1 {
     font-size: 2em;
   }
-  .hero-content .hero-countdown {
-    width: 20em;
+  .hero-content h2 {
+    font-size: 1em;
+  }
+  .hero-content p {
+    font-size: 1em;
   }
 }
 
 @media screen and (max-width: 320px) {
   .hero-content {
     padding: 18vh 0;
-  }
-  .hero-content .hero-info i {
-    font-size: 1em;
   }
   .hero-content h1 {
     font-size: 2em;
