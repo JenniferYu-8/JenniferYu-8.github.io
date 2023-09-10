@@ -428,6 +428,7 @@ h2 {
   nav .navbar .nav-links .links li {
     width: 100%;
     height: auto;
+    display: block;
   }
   nav .navbar .nav-links .links li a {
     font-size: 1.2em;
@@ -438,10 +439,11 @@ h2 {
   nav .navbar .nav-links .links li .sub-menu {
     display: none;
     position: relative;
-    font-size: 0.8em;
+    font-size: 0.6em;
     width: 100%;
     top: 0;
     right: 0;
+    padding-top: 0.5em;
     padding-bottom: 1em;
   }
   nav .navbar .nav-links .links #navbar-button {
@@ -475,13 +477,12 @@ h2 {
     font-size: 1.6rem;
   }
   nav .navbar .navbar-toggle .bar {
-    width: 25px;
-    height: 3px;
+    width: 30px;
+    height: 2px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: #eeeeee;
-    border: solid #eeeeee;
     border-radius: 50px;
     display: block;
     cursor: pointer;
@@ -509,11 +510,46 @@ h2 {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
+  .flex-container p {
+    font-size: 1em;
+  }
+  .flex-container .mail {
+    font-size: 1em;
+  }
+  .flex-container .img-wrap .bio {
+    font-size: 0.8em;
+  }
 }
 
 @media screen and (max-width: 769px) {
   .hero-content {
     padding: 18vh 0;
+  }
+  .hero-content h1 {
+    font-size: 4em;
+  }
+  .hero-content h2 {
+    font-size: 1.5em;
+  }
+  .hero-content p {
+    font-size: 1.5em;
+  }
+  .flex-container p {
+    font-size: 0.6em;
+  }
+  .flex-container .mail {
+    font-size: 0.5em;
+  }
+  .flex-container .img-wrap .bio {
+    font-size: 0.35em;
+    line-height: 1.5em;
+  }
+  .footer .row ul {
+    padding-bottom: 10px;
+  }
+  .footer .row ul li {
+    display: block;
+    padding: 0.25em;
   }
 }
 
@@ -526,29 +562,87 @@ h2 {
     line-height: 1em;
     padding-bottom: 0;
   }
+  nav .navbar .navbar-toggle .bar {
+    width: 25px;
+    height: 1px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #eeeeee;
+    border: solid #eeeeee;
+    border-radius: 50px;
+    display: block;
+    cursor: pointer;
+  }
   .hero-content {
     padding: 18vh 0;
-  }
-  .hero-content .hero-info {
-    padding: 0.2em;
-  }
-  .hero-content .hero-info i {
-    font-size: 1em;
   }
   .hero-content h1 {
     font-size: 2em;
   }
-  .hero-content .hero-countdown {
-    width: 20em;
+  .hero-content h2 {
+    font-size: 1em;
+  }
+  .hero-content p {
+    font-size: 1em;
+  }
+  .flex-container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .flex-container .member {
+    width: 100%;
+    padding: 10px 0;
+  }
+  .flex-container .member p {
+    margin: auto;
+    font-size: 1em;
+    line-height: 1.1em;
+    text-align: center;
+  }
+  .flex-container .member .mail {
+    font-size: 1em;
+    margin-left: 100px;
+  }
+  .flex-container .member .img-wrap {
+    margin: auto;
+    position: relative;
+    padding: 0px;
+  }
+  .flex-container .member .img-wrap img {
+    width: 200px;
+    margin-left: -65px;
+  }
+  .flex-container .member .img-wrap .bio-layer {
+    width: 200px;
+    margin-left: -65px;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .flex-container .member .img-wrap .bio-layer .bio {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px;
+    font-size: 0.8em;
   }
 }
 
 @media screen and (max-width: 320px) {
   .hero-content {
     padding: 18vh 0;
-  }
-  .hero-content .hero-info i {
-    font-size: 1em;
   }
   .hero-content h1 {
     font-size: 2em;
