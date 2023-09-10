@@ -239,6 +239,7 @@ h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  padding-bottom: 2em;
 }
 
 .flex-container .flex-child {
@@ -288,6 +289,20 @@ h2 {
 .section p {
   text-align: justify;
   line-height: 2em;
+}
+
+.section p .bolded {
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+}
+
+.section .mail {
+  color: #822726;
+  text-decoration: none;
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+}
+
+.section .mail:hover {
+  color: #9f4745;
 }
 
 .grey-section {
@@ -340,17 +355,17 @@ h2 {
   padding-left: 5vw;
 }
 
-.white-section p {
+.white-section .bold {
   font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 }
 
-.white-section p a {
+.white-section .bold .mail {
   color: #822726;
   text-decoration: none;
   font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 }
 
-.white-section p a:hover {
+.white-section .bold .mail:hover {
   color: #9f4745;
 }
 
