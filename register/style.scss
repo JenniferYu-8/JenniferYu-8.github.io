@@ -221,6 +221,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    padding-bottom: 2em;
 
     .flex-child {
         background-color: $lightRed;
@@ -261,7 +262,23 @@ h2 {
     p {
         text-align: justify;
         line-height: 2em;
+
+        .bolded {
+            font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+        }
     }
+
+    .mail {
+        color: $lightRed;
+        text-decoration: none;
+        font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+
+        &:hover {
+            color: #9f4745;
+        }
+    }
+
+
 }
 
 .grey-section {
@@ -316,10 +333,10 @@ h2 {
         }
     }
 
-    p {
+    .bold {
         font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 
-        a {
+        .mail {
             color: $lightRed;
             text-decoration: none;
             font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
