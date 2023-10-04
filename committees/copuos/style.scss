@@ -269,6 +269,15 @@ h2 {
     }
 }
 
+.matrix {
+    width: 100%;
+
+    iframe {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
 .grey-section {
     background-color: $darkGrey;
     color: $white;
@@ -294,7 +303,7 @@ h2 {
     }
 
     .pos {
-        color: #E89695;
+        color: $lightRed;
         font-size: 1.2em;
         padding-top: 0;
     }
