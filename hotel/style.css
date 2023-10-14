@@ -221,46 +221,79 @@ nav.scroll {
 
 h2 {
   font-family: 'proxima_nova_bold';
-  font-size: 3em;
-  padding-top: 10vh;
-  text-align: center;
-}
-
-p {
-  text-align: center;
   font-size: 2em;
-  padding: 5vh 10vw;
+  text-align: center;
 }
 
-.icon-container {
+.section {
+  padding: 10vh 12vw;
+}
+
+.section h2 {
+  padding-bottom: 5vh;
+}
+
+.section p {
+  text-align: justify;
+  line-height: 2em;
+}
+
+.section p .bolded {
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+}
+
+.section .flex-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 3vh 40vw;
+  width: 100%;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.icon-container a {
-  text-decoration: none;
-  color: #411313;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-bottom: 10vh;
+.white-section .text {
+  width: 60%;
+  padding-right: 30px;
 }
 
-.icon-container a:hover {
-  color: #822726;
+.white-section .photo {
+  margin: auto;
+  height: 100%;
 }
 
-.icon-container a i {
-  font-size: 5em;
-  margin: 0% 1%;
+.white-section .photo img {
+  height: 100%;
+  width: 600px;
+  border-radius: 25px;
+}
+
+.white-section .map {
+  margin: auto;
+  padding: 10px;
+  background-color: #822726;
+  border-radius: 30px;
+  width: 420px;
+  height: 100%;
+}
+
+.white-section .map iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.grey-section {
+  background-color: #343434;
+  color: #eeeeee;
+}
+
+.grey-section img {
+  width: 630px;
+  height: 100%;
+  margin-right: 50px;
+  border-radius: 25px;
 }
 
 .footer {
