@@ -268,7 +268,8 @@ nav.scroll {
 
 .letter-container {
   padding: 15vh 12vw;
-  background-color: #eeeeee;
+  background-color: #343434;
+  color: white;
   font-size: 1.05em;
   line-height: 3.8vh;
 }
@@ -296,6 +297,122 @@ nav.scroll {
   padding-left: 5vh;
   height: 55vh;
   width: auto;
+}
+
+.section {
+  padding: 10vh 12vw;
+  background-color: #eeeeee;
+  font-size: 1.05em;
+  line-height: 3.8vh;
+}
+
+.section h2 {
+  font-family: 'proxima_nova_bold';
+  padding-bottom: 5vh;
+  text-align: center;
+  font-size: 2em;
+}
+
+.section p {
+  text-align: justify;
+  line-height: 2em;
+}
+
+.section p .bolded {
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+}
+
+.section .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stats-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.stats-container .stat {
+  width: 20em;
+  height: 30vh;
+  background-color: #822726;
+  color: #eeeeee;
+  border-radius: 25px;
+  padding: 50px;
+  text-align: center;
+}
+
+.stats-container .number1 {
+  padding: 30px;
+  overflow: hidden;
+  height: 5em;
+}
+
+.stats-container .number1 ul {
+  list-style-type: none;
+  font-size: 5em;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  line-height: 1em;
+  margin-top: -0.2em;
+}
+
+.stats-container .number1 .roll1 {
+  -webkit-animation-name: roll1;
+          animation-name: roll1;
+}
+
+.stats-container .number2 {
+  padding: 30px;
+  overflow: hidden;
+  height: 5em;
+}
+
+.stats-container .number2 ul {
+  list-style-type: none;
+  font-size: 5em;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  line-height: 1em;
+  margin-top: -0.2em;
+}
+
+.stats-container .number2 .roll2 {
+  -webkit-animation-name: roll2;
+          animation-name: roll2;
+}
+
+.stats-container .description {
+  padding-top: 15px;
+}
+
+.stats-container .description p {
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 1em;
+  text-transform: uppercase;
 }
 
 .footer {
@@ -340,6 +457,30 @@ nav.scroll {
 .footer .row p {
   font-size: 0.85em;
   padding-top: 4vh;
+}
+
+@-webkit-keyframes roll1 {
+  100% {
+    margin-top: -9.4em;
+  }
+}
+
+@keyframes roll1 {
+  100% {
+    margin-top: -9.4em;
+  }
+}
+
+@-webkit-keyframes roll2 {
+  100% {
+    margin-top: -2.4em;
+  }
+}
+
+@keyframes roll2 {
+  100% {
+    margin-top: -2.4em;
+  }
 }
 
 @-webkit-keyframes growDown {
