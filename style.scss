@@ -1,6 +1,7 @@
 $darkRed: #411313; // #822726
 $white: #eeeeee; // rgb(245, 245, 245)
 $lightRed: #822726;
+$darkGrey: #343434;
 
 @font-face {
     font-family: 'proxima_nova_rgregular';
@@ -251,7 +252,8 @@ nav.scroll {
 
 .letter-container {
     padding: 15vh 12vw;
-    background-color: $white;
+    background-color: $darkGrey;
+    color: white;
     font-size: 1.05em;
     line-height: 3.8vh;
 
@@ -279,6 +281,105 @@ nav.scroll {
 
         height: 55vh;
         width: auto;
+    }
+}
+
+.section {
+    padding: 10vh 12vw;
+    // padding: 15vh 12vw;
+    background-color: $white;
+    font-size: 1.05em;
+    line-height: 3.8vh;
+
+    h2 {
+        font-family: 'proxima_nova_bold';
+        padding-bottom: 5vh;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    p {
+        text-align: justify;
+        line-height: 2em;
+
+        .bolded {
+            font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+        }
+    }
+
+    .flex-box {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+    }
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+
+    .stat {
+        width: 20em;
+        height: 30vh;
+        background-color: $lightRed;
+        color: $white;
+        border-radius: 25px;
+        padding: 50px;
+        text-align: center;
+    }
+
+    .number1 {
+        padding: 30px;
+        overflow: hidden;
+        height: 5em;
+
+        ul {
+            list-style-type: none;
+            font-size: 5em;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            line-height: 1em;
+            margin-top: -0.2em;
+        }
+
+        .roll1 {
+            animation-name: roll1;
+        }
+    }
+
+    .number2 {
+        padding: 30px;
+        overflow: hidden;
+        height: 5em;
+
+        ul {
+            list-style-type: none;
+            font-size: 5em;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            line-height: 1em;
+            margin-top: -0.2em;
+        }
+
+        .roll2 {
+            animation-name: roll2;
+        }
+    }
+
+    .description {
+        padding-top: 15px;
+        p {
+            text-align: center;
+            line-height: 1.2em;
+            font-size: 1em;
+            text-transform: uppercase;
+            
+        }
     }
 }
 
@@ -326,6 +427,18 @@ nav.scroll {
         }
     }
 }
+
+@keyframes roll1 {
+    100% {
+        margin-top: -9.4em;
+    }
+} 
+
+@keyframes roll2 {
+    100% {
+        margin-top: -2.4em;
+    }
+} 
 
 @keyframes growDown {
     0% {
