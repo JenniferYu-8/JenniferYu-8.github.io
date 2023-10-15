@@ -661,6 +661,13 @@ nav.scroll {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
+  .stats-container {
+    display: block;
+  }
+  .stats-container .stat {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -757,6 +764,18 @@ nav.scroll {
     padding-left: 0;
     width: 100%;
     height: auto;
+  }
+  .stats-container .stat {
+    width: 15em;
+  }
+  .stats-container .number1 ul {
+    font-size: 4em;
+  }
+  .stats-container .number2 ul {
+    font-size: 4em;
+  }
+  .stats-container .number3 ul {
+    font-size: 3em;
   }
 }
 

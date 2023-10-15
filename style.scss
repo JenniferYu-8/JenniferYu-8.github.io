@@ -609,6 +609,15 @@ nav.scroll {
         }
     }
 
+    .stats-container {
+        display: block;
+
+        .stat {
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
 }
     
 
@@ -747,6 +756,31 @@ nav.scroll {
             width: 100%;
             height: auto;
         }
+    }
+
+    .stats-container {
+        .stat {
+            width: 15em;
+        }
+
+        .number1 {
+            ul {
+                font-size: 4em;
+            }
+        }
+
+        .number2 {
+            ul {
+                font-size: 4em;
+            }
+        }
+
+        .number3 {
+            ul {
+                font-size: 3em;
+            }
+        }
+
     }
 }
 
