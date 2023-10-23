@@ -328,6 +328,10 @@ h2 {
   padding: 2vh 1vw;
 }
 
+.grey-section table .bold {
+  font-family: 'proxima_nova_bold';
+}
+
 .grey-section table .middle {
   text-align: center;
 }
