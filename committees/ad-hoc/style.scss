@@ -1,16 +1,16 @@
-$darkRed: #411313; // #822726
-$white: #eeeeee; // rgb(245, 245, 245)
+$darkRed: #411313; // # rgb(65, 19, 19)
 $lightRed: #822726;
+$white: #eeeeee; // rgb(245, 245, 245)
 $darkGrey: #343434;
 
 @font-face {
     font-family: 'proxima_nova_rgregular';
-    src: url(proxima.otf);
+    src: url(../../proxima.otf);
 }
 
 @font-face {
     font-family: 'proxima_nova_bold';
-    src: url(proxima-bold.otf);
+    src: url(../../proxima-bold.otf);
 }
 
 * {
@@ -22,11 +22,11 @@ $darkGrey: #343434;
 }
 
 .background-image {
-    background-image: linear-gradient(rgba(5, 5, 5, 0.8), rgba(10, 10, 10, 0.7)), url("/images/background.png") !important;
+    background-image: linear-gradient(rgba(5, 5, 5, 0.8), rgba(10, 10, 10, 0.7)), url("/images/background.png") !important; // CHANGE IMAGE
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 40vh;
     // overflow: hidden; // play with later
 }
 
@@ -37,6 +37,7 @@ nav {
     width: 100%;
     height: 12vh;
     background: transparent;
+    z-index: 1000;
 
     .navbar {
         // max-width: 1250px; // ?
@@ -70,7 +71,6 @@ nav {
                     display: flex;
                     align-items: center;
                     list-style: none;
-                    // padding: 0.1em 1em;
                     padding: 0.2em 1em;
                     white-space: nowrap;
 
@@ -181,7 +181,7 @@ nav.scroll {
 }
 
 .hero {
-    height:100vh;
+    height:40vh;
     // text-shadow: 0 0 5px $darkRed, 0 0 5px $darkRed;
 
     .hero-container {
@@ -189,224 +189,184 @@ nav.scroll {
         text-align: center;
         margin-bottom: 10vh;
     }
-
-    .hero-info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1vh; 
-
-        i {
-            font-size: 1.5em;
-            padding-right: 0.6em;
-            color: $white;
-        }
-
-    }
 }
 
 .hero-content {
     color: $white;
-    padding: 30vh 0;
+    padding: 18vh 0;
 
     h1 {
         color: $white;
-        font-size: 5em;
-        // text-transform: uppercase;
-    }
-
-    h2 {
-        color: $white;
-        font-size: 1.5em;
-    }
-
-    p {
-        color: $white;
-        font-size: 1.6em;
-        font-style: italic;
-        padding: 2vh;
-        
-    }
-
-    .hero-countdown {
-        background-color: rgba(50,50,50, 0.5);
-        width: 600px;
-        margin: 3vh auto; // 2em
-        margin-bottom: 8vh;
-        border-radius: 40px;
-    }
-
-    li {
-        display: inline-block;
-        font-size: 1.5em;
-        list-style-type: none;
-        padding: 1em;
-        border-radius: 5px;
-
-      }
-      
-      li span {
-        display: block;
-        font-size: 3em;
-      }
-}
-
-.letter-container {
-    padding: 15vh 12vw;
-    background-color: $darkGrey;
-    color: white;
-    font-size: 1.05em;
-    line-height: 3.8vh;
-
-    h2 {
-        font-family: 'proxima_nova_bold';
-        padding-bottom: 5vh;
-    }
-
-    p {
-        text-align: justify;
-        text-justify: inter-word;
-    }
-
-    .bold {
-        font-family: 'proxima_nova_bold';
-    }
-
-    img {
-        height: 15vh;
-    }
-
-    #sec-gen {
-        float: right;
-        padding-left: 5vh;
-
-        height: 55vh;
-        width: auto;
+        font-size: 4em;
     }
 }
 
-.section {
-    padding: 10vh 12vw;
-    // padding: 15vh 12vw;
+// Page content styles
+.body {
     background-color: $white;
-    font-size: 1.05em;
-    line-height: 3.8vh;
+}
 
-    h2 {
-        font-family: 'proxima_nova_bold';
-        padding-bottom: 5vh;
-        text-align: center;
-        font-size: 2em;
-    }
+h2 {
+    font-family: 'proxima_nova_bold';
+    font-size: 2em; // FJ CHANGE TO 2em FOR THE ACC PAGE
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+// INSERT PAGE-SPECIFIC STYLES HERE
+.section {
+    padding: 12vh 12vw;
 
     p {
         text-align: justify;
         line-height: 2em;
-
-        .bolded {
-            font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
-        }
-    }
-
-    .flex-box {
-        display: flex;
-        width: 100%;
-        padding: 0;
-        justify-content: space-between;
+        text-justify: inter-word; 
     }
 }
 
-.stats-container {
+.flex-container-topics {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    // padding: 3vh 5vw;
 
-    .stat {
-        width: 20em;
-        height: 30vh;
-        background-color: $lightRed;
-        color: $white;
-        border-radius: 25px;
-        padding: 50px;
+    h3 {
         text-align: center;
+        font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+        padding-bottom: 2vh;
     }
 
-    .number1 {
-        padding: 30px;
-        overflow: hidden;
-        height: 5em;
+    .flex-child-topic {
+        width: 30%;
+    }
+}
 
-        ul {
-            list-style-type: none;
-            font-size: 5em;
-            animation-duration: 3s;
-            animation-timing-function: ease;
-            animation-delay: 1s;
-            animation-fill-mode: forwards;
-            line-height: 1em;
-            margin-top: -0.2em;
-        }
+ol {
+    padding: 0 0 5vh 5vw;
+    line-height: 2em;
 
-        .roll1 {
-            animation-name: roll1;
-        }
+    ul {
+        padding-left: 5vw;
+    }
+}
+
+.button {
+    background-color: $lightRed;
+    color: $white;
+    border-radius: 50px;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5em;
+    margin-top: 2vh;
+
+    a {
+        color: $white;
+        font-size: 1.3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 2vh 3vw;
+        height: 100%;
+        width: 100%;
     }
 
-    .number2 {
-        padding: 30px;
-        overflow: hidden;
-        height: 5em;
+    &:hover {
+        transform: scale(1.01);
+        filter: drop-shadow(0 0 3px $darkRed);
+    }
+}
 
-        ul {
-            list-style-type: none;
-            font-size: 5em;
-            animation-duration: 3s;
-            animation-timing-function: ease;
-            animation-delay: 1s;
-            animation-fill-mode: forwards;
-            line-height: 1em;
-            margin-top: -0.2em;
-        }
+.matrix {
+    iframe {
+        width: 100%;
+        height: 50vh;
+    }
+}
 
-        .roll2 {
-            animation-name: roll2;
-        }
+.grey-section {
+    background-color: $darkGrey;
+    color: $white;
+
+}
+
+.flex-container-dais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3vh 5vw;
+
+    img {
+        width: 20vw;
+        // border: 5px solid $darkRed;
     }
 
-    .number3 {
-        padding: 30px;
-        overflow: hidden;
-        height: 5em;
-
-        ul {
-            list-style-type: none;
-            font-size: 5em;
-            animation-duration: 3s;
-            animation-timing-function: ease;
-            animation-delay: 1s;
-            animation-fill-mode: forwards;
-            line-height: 1em;
-            margin-top: -0.2em;
-        }
-
-        .roll3 {
-            animation-name: roll3;
-        }
+    p {
+        font-size: 1.4em;
+        max-width: 20vw;
+        text-align: center;
+        padding-top: 2vh;
     }
 
-    .description {
-        padding-top: 15px;
-        p {
-            text-align: center;
-            line-height: 1.2em;
+    .pos {
+        color: $lightRed;
+        font-size: 1.2em;
+        padding-top: 0;
+    }
+
+    .img-wrap {
+        position: relative;
+        width: 20vw;
+
+        .bio-layer {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: $darkGrey;
+            color: #fff;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: scroll;
+          
+            /* transition effect. not necessary */
+            transition: opacity .2s, visibility .2s;
+        }
+
+        .bio {
+            position: absolute;
+            top: 0;
+            padding: 1em;
+            transition: .2s;
+            transform: translateY(1em);
             font-size: 1em;
-            text-transform: uppercase;
-            
+            line-height: 1.2em;
+            text-align: left;
+        }
+
+        &:hover {
+            .bio-layer {
+                visibility: visible;
+                opacity: 1;
+            }
+
+            .bio {
+                transform: translateY(0);
+            }
         }
     }
+    
+
 }
 
 
 
+// footer
 .footer{
     background: $darkRed;
     padding: 3vh 0;
@@ -449,24 +409,6 @@ nav.scroll {
         }
     }
 }
-
-@keyframes roll1 {
-    100% {
-        margin-top: -9.4em;
-    }
-} 
-
-@keyframes roll2 {
-    100% {
-        margin-top: -2.4em;
-    }
-} 
-
-@keyframes roll3 {
-    100% {
-        margin-top: -4.4em;
-    }
-} 
 
 @keyframes growDown {
     0% {
@@ -517,7 +459,6 @@ nav.scroll {
                     li {
                         width: 100%;
                         height: auto;
-                        display: block;
                 
                         a {
                             font-size: 1.2em;
@@ -530,13 +471,11 @@ nav.scroll {
                         .sub-menu {
                             display: none;
                             position: relative;
-                            font-size: 0.6em;
+                            font-size: 0.8em;
                             width: 100%;
                             top: 0;
                             right: 0;
-                            padding-top: 0.5em;
                             padding-bottom: 1em;
-                            // border-bottom: solid $lightRed;
                         }
                     }
 
@@ -572,12 +511,12 @@ nav.scroll {
             }
 
             .navbar-toggle .bar {
-                width: 30px; // was 25
-                height: 2px; // was 3
+                width: 25px;
+                height: 3px;
                 margin: 5px auto;
                 transition: all 0.3s ease-in-out;
                 background: $white;
-                // border: solid $white;
+                border: solid $white;
                 border-radius: 50px;
                 display: block;
                 cursor: pointer;
@@ -610,15 +549,6 @@ nav.scroll {
         }
     }
 
-    .stats-container {
-        display: block;
-
-        .stat {
-            margin: 0 auto;
-            margin-bottom: 20px;
-        }
-    }
-
 }
     
 
@@ -626,53 +556,6 @@ nav.scroll {
 
     .hero-content {
         padding: 18vh 0; 
-
-        .hero-info {
-            i {
-                font-size: 1.5em;
-            }
-        }
-
-        #hero-info-top {
-            padding-top: 8vh;
-        }
-
-        h1 {
-            font-size: 4em;
-        }
-
-        h2 {
-            font-size: 1.5em;
-        }
-
-        p {
-            font-size: 1.5em; // iw
-        }
-
-        .hero-countdown {
-            width: 400px; // iw
-        }
-
-        li {
-            font-size: 1em; // iw
-        }
-          
-        li span {
-        font-size: 3em; // iw
-        }
-    }
-
-    .footer {
-        .row {
-            ul {
-                padding-bottom: 10px;
-
-                li {
-                    display:block;
-                    padding: 0.25em;
-                }
-            }
-        }
     }
 }
 
@@ -694,18 +577,6 @@ nav.scroll {
                     }
                 }
             }
-
-            .navbar-toggle .bar {
-                width: 25px;
-                height: 1px;
-                margin: 5px auto;
-                transition: all 0.3s ease-in-out;
-                background: $white;
-                border: solid $white;
-                border-radius: 50px;
-                display: block;
-                cursor: pointer;
-            }
         }
     }
 
@@ -719,67 +590,12 @@ nav.scroll {
             }
         }
 
-        #hero-info-top {
-            padding-top: 8vh;
-        }
-
         h1 {
             font-size: 2em;
         }
 
-        h2 {
-            font-size: 1em;
-        }
-
-        p {
-            font-size: 1em; // iw
-        }
-
         .hero-countdown {
             width: 20em; // iw
-        }
-
-        li {
-            font-size: 1em; // iw
-            padding: 1em 0.5em;
-        }
-          
-        li span {
-            font-size: 2em; // iw
-        }
-    }
-
-    .letter-container {
-
-        #sec-gen {
-            margin: auto;
-            padding-left: 0;
-            width: 100%;
-            height: auto;
-        }
-    }
-
-    .stats-container {
-        .stat {
-            width: 15em;
-        }
-
-        .number1 {
-            ul {
-                font-size: 4em;
-            }
-        }
-
-        .number2 {
-            ul {
-                font-size: 4em;
-            }
-        }
-
-        .number3 {
-            ul {
-                font-size: 3em;
-            }
         }
 
     }
@@ -796,10 +612,6 @@ nav.scroll {
             }
         }
 
-        #hero-info-top {
-            padding-top: 8vh;
-        }
-
         h1 {
             font-size: 2em;
         }
@@ -811,19 +623,7 @@ nav.scroll {
         p {
             font-size: 1em; // iw
         }
-
-        .hero-countdown {
-            width: 15em; // iw
-        }
-
-        li {
-            font-size: 0.8em; // iw
-            padding: 1em 0.5em;
-          }
-          
-        li span {
-        font-size: 1.6em; // iw
-        }
     }
 }
+
 
