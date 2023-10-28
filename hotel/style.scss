@@ -146,7 +146,7 @@ nav {
                         height: 6vh;
                         width: 100%;
                         border: solid;
-                        border-radius: 50px;
+                        // border-radius: 50px;
                     
                         &:hover {
                             // border-color: $darkRed;
@@ -251,7 +251,7 @@ h2 {
         img {
             height: 100%;
             width: 600px;
-            border-radius: 25px;
+            // border-radius: 25px;
         }
     }
 
@@ -259,14 +259,14 @@ h2 {
         margin: auto;
         padding: 10px;
         background-color: $lightRed;
-        border-radius: 30px;
+        // border-radius: 30px;
         width: 420px;
         height: 100%;
     
         iframe {
             width: 100%;
             height: 100%;
-            border-radius: 25px;
+            // border-radius: 25px;
         }
     }
 }
@@ -279,7 +279,7 @@ h2 {
         width: 630px;
         height: 100%;
         margin-right: 50px;
-        border-radius: 25px;
+        // border-radius: 25px;
     }
 }
 

@@ -22,7 +22,7 @@ $darkGrey: #343434;
 }
 
 .background-image {
-    background-image: linear-gradient(rgba(5, 5, 5, 0.8), rgba(10, 10, 10, 0.7)), url("/images/background.png") !important;
+    background-image: linear-gradient(rgba(5, 5, 5, 0.8), rgba(10, 10, 10, 0.7)), url("/images/canmun.jpg") !important;
     background-size: cover;
     position: relative;
     width: 100%;
@@ -146,7 +146,7 @@ nav {
                         height: 6vh;
                         width: 100%;
                         border: solid;
-                        border-radius: 50px;
+                        // border-radius: 50px;
                     
                         &:hover {
                             // border-color: $darkRed;
@@ -184,20 +184,55 @@ nav.scroll {
     height:100vh;
     // text-shadow: 0 0 5px $darkRed, 0 0 5px $darkRed;
 
+    a {
+        color: $white;
+        background-color: $lightRed;
+        // background-color: rgba(130,39,38, 0.5);
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        // border: solid;
+        // border-radius: 50px;
+        font-size: 1.8em;
+        text-transform: uppercase;
+        font-family: 'proxima_nova_bold';
+    
+        &:hover {
+            text-shadow: none;
+            background-color: $white;
+            color: $darkRed;
+            transition: all 0.3s ease;
+        }
+    }
+
     .hero-container {
         width: 100%;
         text-align: center;
         margin-bottom: 10vh;
     }
 
+    #date {
+        // margin-top: 3em;
+        padding-right: 2em;
+    }
+
+    .flex-box {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        text-align: center; 
+        padding-top: 3em;
+    }
+
     .hero-info {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         padding: 1vh; 
 
         i {
-            font-size: 1.5em;
+            font-size: 1.3em;
             padding-right: 0.6em;
             color: $white;
         }
@@ -207,12 +242,14 @@ nav.scroll {
 
 .hero-content {
     color: $white;
-    padding: 30vh 0;
+    padding: 25vh 0;
 
     h1 {
         color: $white;
         font-size: 5em;
-        // text-transform: uppercase;
+        text-transform: uppercase;
+        font-family: 'proxima_nova_bold';
+        // padding-bottom: 50px; // FJ DELETE
     }
 
     h2 {
@@ -229,11 +266,12 @@ nav.scroll {
     }
 
     .hero-countdown {
-        background-color: rgba(50,50,50, 0.5);
+        background-color: rgba(20,20,20, 0.5);
+        color: #ccc;
         width: 600px;
         margin: 3vh auto; // 2em
         margin-bottom: 8vh;
-        border-radius: 40px;
+        // border-radius: 40px;
     }
 
     li {
@@ -241,7 +279,7 @@ nav.scroll {
         font-size: 1.5em;
         list-style-type: none;
         padding: 1em;
-        border-radius: 5px;
+        // border-radius: 5px;
 
       }
       
@@ -253,8 +291,7 @@ nav.scroll {
 
 .letter-container {
     padding: 15vh 12vw;
-    background-color: $darkGrey;
-    color: white;
+    background-color: $white;
     font-size: 1.05em;
     line-height: 3.8vh;
 
@@ -316,6 +353,12 @@ nav.scroll {
     }
 }
 
+.grey-section {
+    background-color: $darkGrey;
+    color: white;
+
+}
+
 .stats-container {
     display: flex;
     justify-content: space-between;
@@ -325,19 +368,21 @@ nav.scroll {
         height: 30vh;
         background-color: $lightRed;
         color: $white;
-        border-radius: 25px;
-        padding: 50px;
+        // border-radius: 25px;
+        padding: 50px 0;
         text-align: center;
     }
 
     .number1 {
         padding: 30px;
         overflow: hidden;
-        height: 5em;
+        height: 7em;
 
         ul {
             list-style-type: none;
-            font-size: 5em;
+            font-size: 7em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
             animation-duration: 3s;
             animation-timing-function: ease;
             animation-delay: 1s;
@@ -354,11 +399,13 @@ nav.scroll {
     .number2 {
         padding: 30px;
         overflow: hidden;
-        height: 5em;
+        height: 7em;
 
         ul {
             list-style-type: none;
-            font-size: 5em;
+            font-size: 7em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
             animation-duration: 3s;
             animation-timing-function: ease;
             animation-delay: 1s;
@@ -375,11 +422,13 @@ nav.scroll {
     .number3 {
         padding: 30px;
         overflow: hidden;
-        height: 5em;
+        height: 7em;
 
         ul {
             list-style-type: none;
-            font-size: 5em;
+            font-size: 7em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bolder;
             animation-duration: 3s;
             animation-timing-function: ease;
             animation-delay: 1s;
@@ -394,7 +443,7 @@ nav.scroll {
     }
 
     .description {
-        padding-top: 15px;
+        // padding-top: 15px;
         p {
             text-align: center;
             line-height: 1.2em;
@@ -452,19 +501,19 @@ nav.scroll {
 
 @keyframes roll1 {
     100% {
-        margin-top: -9.4em;
+        margin-top: -9.2em;
     }
 } 
 
 @keyframes roll2 {
     100% {
-        margin-top: -2.4em;
+        margin-top: -2.2em;
     }
 } 
 
 @keyframes roll3 {
     100% {
-        margin-top: -4.4em;
+        margin-top: -4.2em;
     }
 } 
 
@@ -712,6 +761,10 @@ nav.scroll {
     .hero-content {
         padding: 18vh 0; 
 
+        a {
+            font-size: 1.3em;
+        }
+
         .hero-info {
             padding: 0.2em;
             i {
@@ -747,6 +800,18 @@ nav.scroll {
         li span {
             font-size: 2em; // iw
         }
+
+        .flex-box {
+            display: block;
+
+            #date {
+                padding: 0;
+            }
+
+            .hero-info {
+                padding: 1em;
+            }
+        }
     }
 
     .letter-container {
@@ -762,23 +827,34 @@ nav.scroll {
     .stats-container {
         .stat {
             width: 15em;
+
+            .description {
+                padding-top: 15px;
+
+                p {
+                    font-size: 0.8em;
+                }
+            }
         }
 
         .number1 {
+            height: 5em;
             ul {
-                font-size: 4em;
+                font-size: 5em;
             }
         }
 
         .number2 {
+            height: 5em;
             ul {
-                font-size: 4em;
+                font-size: 5em;
             }
         }
 
         .number3 {
+            height: 5em;
             ul {
-                font-size: 3em;
+                font-size: 5em;
             }
         }
 

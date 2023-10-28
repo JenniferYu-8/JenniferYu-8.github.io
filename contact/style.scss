@@ -145,7 +145,7 @@ nav {
                         height: 6vh;
                         width: 100%;
                         border: solid;
-                        border-radius: 50px;
+                        // border-radius: 50px;
                     
                         &:hover {
                             // border-color: $darkRed;
@@ -259,7 +259,7 @@ h2 {
     .mail-bttn {
         background-color: $lightRed;
         color: $white;
-        border-radius: 25px;
+        // border-radius: 25px;
 
         a {
             font-size: 0.95em;

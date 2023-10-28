@@ -17,8 +17,8 @@
 }
 
 .background-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.8)), to(rgba(10, 10, 10, 0.7))), url("/images/background.png") !important;
-  background-image: linear-gradient(rgba(5, 5, 5, 0.8), rgba(10, 10, 10, 0.7)), url("/images/background.png") !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.8)), to(rgba(10, 10, 10, 0.7))), url("/images/canmun.jpg") !important;
+  background-image: linear-gradient(rgba(5, 5, 5, 0.8), rgba(10, 10, 10, 0.7)), url("/images/canmun.jpg") !important;
   background-size: cover;
   position: relative;
   width: 100%;
@@ -167,7 +167,6 @@ nav .navbar .nav-links .links #navbar-button #button {
   height: 6vh;
   width: 100%;
   border: solid;
-  border-radius: 50px;
 }
 
 nav .navbar .nav-links .links #navbar-button #button:hover {
@@ -198,10 +197,50 @@ nav.scroll {
   height: 100vh;
 }
 
+.hero a {
+  color: #eeeeee;
+  background-color: #822726;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-family: 'proxima_nova_bold';
+}
+
+.hero a:hover {
+  text-shadow: none;
+  background-color: #eeeeee;
+  color: #411313;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
 .hero .hero-container {
   width: 100%;
   text-align: center;
   margin-bottom: 10vh;
+}
+
+.hero #date {
+  padding-right: 2em;
+}
+
+.hero .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding-top: 3em;
 }
 
 .hero .hero-info {
@@ -211,26 +250,28 @@ nav.scroll {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 1vh;
 }
 
 .hero .hero-info i {
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding-right: 0.6em;
   color: #eeeeee;
 }
 
 .hero-content {
   color: #eeeeee;
-  padding: 30vh 0;
+  padding: 25vh 0;
 }
 
 .hero-content h1 {
   color: #eeeeee;
   font-size: 5em;
+  text-transform: uppercase;
+  font-family: 'proxima_nova_bold';
 }
 
 .hero-content h2 {
@@ -246,11 +287,11 @@ nav.scroll {
 }
 
 .hero-content .hero-countdown {
-  background-color: rgba(50, 50, 50, 0.5);
+  background-color: rgba(20, 20, 20, 0.5);
+  color: #ccc;
   width: 600px;
   margin: 3vh auto;
   margin-bottom: 8vh;
-  border-radius: 40px;
 }
 
 .hero-content li {
@@ -258,7 +299,6 @@ nav.scroll {
   font-size: 1.5em;
   list-style-type: none;
   padding: 1em;
-  border-radius: 5px;
 }
 
 .hero-content li span {
@@ -268,8 +308,7 @@ nav.scroll {
 
 .letter-container {
   padding: 15vh 12vw;
-  background-color: #343434;
-  color: white;
+  background-color: #eeeeee;
   font-size: 1.05em;
   line-height: 3.8vh;
 }
@@ -333,6 +372,11 @@ nav.scroll {
           justify-content: space-between;
 }
 
+.grey-section {
+  background-color: #343434;
+  color: white;
+}
+
 .stats-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,20 +391,21 @@ nav.scroll {
   height: 30vh;
   background-color: #822726;
   color: #eeeeee;
-  border-radius: 25px;
-  padding: 50px;
+  padding: 50px 0;
   text-align: center;
 }
 
 .stats-container .number1 {
   padding: 30px;
   overflow: hidden;
-  height: 5em;
+  height: 7em;
 }
 
 .stats-container .number1 ul {
   list-style-type: none;
-  font-size: 5em;
+  font-size: 7em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: ease;
@@ -381,12 +426,14 @@ nav.scroll {
 .stats-container .number2 {
   padding: 30px;
   overflow: hidden;
-  height: 5em;
+  height: 7em;
 }
 
 .stats-container .number2 ul {
   list-style-type: none;
-  font-size: 5em;
+  font-size: 7em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: ease;
@@ -407,12 +454,14 @@ nav.scroll {
 .stats-container .number3 {
   padding: 30px;
   overflow: hidden;
-  height: 5em;
+  height: 7em;
 }
 
 .stats-container .number3 ul {
   list-style-type: none;
-  font-size: 5em;
+  font-size: 7em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: ease;
@@ -428,10 +477,6 @@ nav.scroll {
 .stats-container .number3 .roll3 {
   -webkit-animation-name: roll3;
           animation-name: roll3;
-}
-
-.stats-container .description {
-  padding-top: 15px;
 }
 
 .stats-container .description p {
@@ -487,37 +532,37 @@ nav.scroll {
 
 @-webkit-keyframes roll1 {
   100% {
-    margin-top: -9.4em;
+    margin-top: -9.2em;
   }
 }
 
 @keyframes roll1 {
   100% {
-    margin-top: -9.4em;
+    margin-top: -9.2em;
   }
 }
 
 @-webkit-keyframes roll2 {
   100% {
-    margin-top: -2.4em;
+    margin-top: -2.2em;
   }
 }
 
 @keyframes roll2 {
   100% {
-    margin-top: -2.4em;
+    margin-top: -2.2em;
   }
 }
 
 @-webkit-keyframes roll3 {
   100% {
-    margin-top: -4.4em;
+    margin-top: -4.2em;
   }
 }
 
 @keyframes roll3 {
   100% {
-    margin-top: -4.4em;
+    margin-top: -4.2em;
   }
 }
 
@@ -731,6 +776,9 @@ nav.scroll {
   .hero-content {
     padding: 18vh 0;
   }
+  .hero-content a {
+    font-size: 1.3em;
+  }
   .hero-content .hero-info {
     padding: 0.2em;
   }
@@ -759,6 +807,15 @@ nav.scroll {
   .hero-content li span {
     font-size: 2em;
   }
+  .hero-content .flex-box {
+    display: block;
+  }
+  .hero-content .flex-box #date {
+    padding: 0;
+  }
+  .hero-content .flex-box .hero-info {
+    padding: 1em;
+  }
   .letter-container #sec-gen {
     margin: auto;
     padding-left: 0;
@@ -768,14 +825,29 @@ nav.scroll {
   .stats-container .stat {
     width: 15em;
   }
+  .stats-container .stat .description {
+    padding-top: 15px;
+  }
+  .stats-container .stat .description p {
+    font-size: 0.8em;
+  }
+  .stats-container .number1 {
+    height: 5em;
+  }
   .stats-container .number1 ul {
-    font-size: 4em;
+    font-size: 5em;
+  }
+  .stats-container .number2 {
+    height: 5em;
   }
   .stats-container .number2 ul {
-    font-size: 4em;
+    font-size: 5em;
+  }
+  .stats-container .number3 {
+    height: 5em;
   }
   .stats-container .number3 ul {
-    font-size: 3em;
+    font-size: 5em;
   }
 }
 

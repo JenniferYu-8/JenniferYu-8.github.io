@@ -167,7 +167,6 @@ nav .navbar .nav-links .links #navbar-button #button {
   height: 6vh;
   width: 100%;
   border: solid;
-  border-radius: 50px;
 }
 
 nav .navbar .nav-links .links #navbar-button #button:hover {
@@ -234,7 +233,7 @@ nav.scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 12vh;
+  padding-bottom: 8vh;
   width: 80%;
   margin: auto;
   gap: 0.8vw;
@@ -244,7 +243,6 @@ nav.scroll {
   width: 50%;
   height: auto;
   position: relative;
-  border-radius: 40px 40px 0 40px;
 }
 
 .flex-container .flex-child p {
@@ -264,14 +262,11 @@ nav.scroll {
   position: relative;
   width: 100%;
   height: 100%;
-  top: 5vh;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0 40px 40px 40px;
 }
 
 .section {
-  border-radius: 50px;
   background-color: #343434;
 }
 
@@ -292,7 +287,6 @@ nav.scroll {
   display: -ms-flexbox;
   display: flex;
   margin: 3vh auto;
-  border-radius: 50px;
   background-color: #343434;
 }
 
@@ -308,7 +302,6 @@ nav.scroll {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0 0 0 50px;
   padding: 1em 0.5em 1em 1em;
 }
 
@@ -316,7 +309,6 @@ iframe {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 0 0 50px 0;
   padding: 1em 1em 1em 0.5em;
 }
 
@@ -488,7 +480,6 @@ a:hover {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: #eeeeee;
-    border-radius: 50px;
     display: block;
     cursor: pointer;
   }
@@ -550,11 +541,9 @@ a:hover {
   }
   .flex-container #item1 {
     width: 100%;
-    border-radius: 40px 40px 0 0;
   }
   .flex-container #toronto {
     top: 10px;
-    border-radius: 0 0 40px 40px;
   }
   .flex-container .flex-child {
     width: 100%;
