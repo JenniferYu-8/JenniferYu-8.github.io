@@ -168,7 +168,6 @@ nav .navbar .nav-links .links #navbar-button #button {
   height: 6vh;
   width: 100%;
   border: solid;
-  border-radius: 50px;
 }
 
 nav .navbar .nav-links .links #navbar-button #button:hover {
@@ -262,7 +261,6 @@ h2 {
 .button {
   background-color: #822726;
   color: #eeeeee;
-  border-radius: 50px;
   width: 30%;
   margin: auto;
   text-align: center;

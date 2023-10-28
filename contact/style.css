@@ -168,7 +168,6 @@ nav .navbar .nav-links .links #navbar-button #button {
   height: 6vh;
   width: 100%;
   border: solid;
-  border-radius: 50px;
 }
 
 nav .navbar .nav-links .links #navbar-button #button:hover {
@@ -271,7 +270,6 @@ h2 {
 .section .mail-bttn {
   background-color: #822726;
   color: #eeeeee;
-  border-radius: 25px;
 }
 
 .section .mail-bttn a {
