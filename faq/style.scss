@@ -228,6 +228,7 @@ h2 {
         line-height: 3.8vh;
         padding-bottom: 5vh;
         padding-top: 2vh;
+        text-align: justify;
     }
 
     /* Style the buttons that are used to open and close the accordion panel */
@@ -247,6 +248,8 @@ h2 {
 
         p {
             padding: 0 2vw;
+            color: black;
+            text-align: left;
         }
 
         .fa-angle-down {
@@ -489,6 +492,12 @@ h2 {
         }
     }
 
+    .accordion {
+        p {
+            font-size: 0.9em;
+        }
+    }
+
 }
     
 
@@ -496,6 +505,19 @@ h2 {
 
     .hero-content {
         padding: 18vh 0; 
+    }
+
+    .footer {
+        .row {
+            ul {
+                padding-bottom: 10px;
+
+                li {
+                    display:block;
+                    padding: 0.25em;
+                }
+            }
+        }
     }
 }
 

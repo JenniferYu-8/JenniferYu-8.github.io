@@ -582,6 +582,19 @@ nav.scroll {
     .hero-content {
         padding: 18vh 0; 
     }
+
+    .footer {
+        .row {
+            ul {
+                padding-bottom: 10px;
+
+                li {
+                    display:block;
+                    padding: 0.25em;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 481px) {
