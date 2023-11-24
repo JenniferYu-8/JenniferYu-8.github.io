@@ -357,6 +357,33 @@ h2 {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .section .flex-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .section .text {
+    width: 100%;
+    padding: 0;
+  }
+  .section .map {
+    width: 100%;
+    height: 50vh;
+    margin: 1em 0;
+  }
+  .section .photo {
+    margin: auto;
+  }
+  .section .photo img {
+    width: 100%;
+    margin: auto;
+    padding: 0 0 1em 0;
+  }
+}
+
 @media screen and (max-width: 1025px) {
   nav .navbar {
     height: 12vh;
