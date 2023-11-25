@@ -576,6 +576,26 @@ h2 {
   .hero-content {
     padding: 18vh 0;
   }
+  .flex-container-topics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-container-topics .flex-child-topic {
+    width: 100%;
+    padding-bottom: 1em;
+  }
+  .button {
+    width: 55%;
+  }
+  .flex-container-dais p {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+  .flex-container-dais .pos {
+    font-size: 1em;
+  }
   .footer .row ul {
     padding-bottom: 10px;
   }
@@ -593,6 +613,31 @@ h2 {
     font-size: 0.7em;
     line-height: 1em;
     padding-bottom: 0;
+  }
+  .button {
+    width: 100%;
+  }
+  .flex-container-dais {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .flex-container-dais .member {
+    width: 100%;
+  }
+  .flex-container-dais .member .img-wrap {
+    width: 100%;
+  }
+  .flex-container-dais .member .img-wrap img {
+    width: 100%;
+  }
+  .flex-container-dais .member p {
+    margin: auto;
+  }
+  .flex-container-dais .member .pos {
+    padding-bottom: 1em;
   }
   .hero-content {
     padding: 18vh 0;

@@ -335,9 +335,11 @@ ol ul {
   max-width: 20vw;
   text-align: center;
   padding-top: 2vh;
+  line-height: 1.2em;
 }
 
 .flex-container-dais .pos {
+  padding-top: 0.5em;
   color: #822726;
   font-size: 1.2em;
   padding-top: 0;
@@ -585,6 +587,13 @@ ol ul {
   .hero-content {
     padding: 18vh 0;
   }
+  .flex-container-dais p {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+  .flex-container-dais .pos {
+    font-size: 1em;
+  }
   .footer .row ul {
     padding-bottom: 10px;
   }
@@ -617,6 +626,28 @@ ol ul {
   }
   .hero-content .hero-countdown {
     width: 20em;
+  }
+  .flex-container-dais {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .flex-container-dais .member {
+    width: 100%;
+  }
+  .flex-container-dais .member .img-wrap {
+    width: 100%;
+  }
+  .flex-container-dais .member .img-wrap img {
+    width: 100%;
+  }
+  .flex-container-dais .member p {
+    margin: auto;
+  }
+  .flex-container-dais .member .pos {
+    padding-bottom: 1em;
   }
 }
 

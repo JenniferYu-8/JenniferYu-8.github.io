@@ -307,9 +307,11 @@ ol {
         max-width: 20vw;
         text-align: center;
         padding-top: 2vh;
+        line-height: 1.2em;
     }
 
     .pos {
+        padding-top: 0.5em;
         color: $lightRed;
         font-size: 1.2em;
         padding-top: 0;
@@ -560,6 +562,19 @@ ol {
         padding: 18vh 0; 
     }
 
+    .flex-container-dais {
+        p {
+            font-size: 1em;
+            line-height: 1.2em;
+        }
+
+        .pos {
+            font-size: 1em;
+        }
+    }
+
+
+
     .footer {
         .row {
             ul {
@@ -613,6 +628,31 @@ ol {
             width: 20em; // iw
         }
 
+    }
+
+    .flex-container-dais {
+        flex-direction: column;
+        width: 100%;
+
+        .member {
+            width: 100%;
+
+            .img-wrap {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            p {
+                margin: auto;
+            }
+
+            .pos {
+                padding-bottom: 1em;
+            }
+        }
     }
 }
 
