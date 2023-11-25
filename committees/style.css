@@ -465,6 +465,9 @@ h2 {
   .hero-content {
     padding: 18vh 0;
   }
+  .flex-container .img-wrap .committee {
+    font-size: 1.2em;
+  }
   .footer .row ul {
     padding-bottom: 10px;
   }
@@ -497,6 +500,20 @@ h2 {
   }
   .hero-content .hero-countdown {
     width: 20em;
+  }
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    width: 100%;
+  }
+  .flex-container .img-wrap {
+    width: 100%;
+  }
+  .flex-container .img-wrap .committee {
+    font-size: 2em;
   }
 }
 
