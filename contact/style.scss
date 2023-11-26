@@ -233,6 +233,7 @@ h2 {
         padding: 5vh 10vw;
         width: 100%;
         justify-content: space-between;
+        margin: auto;
     }
 
     .flex-child {
@@ -259,6 +260,8 @@ h2 {
     .mail-bttn {
         background-color: $lightRed;
         color: $white;
+        width: 12em;
+        margin: auto;
         // border-radius: 25px;
 
         a {
@@ -470,6 +473,21 @@ h2 {
         }
     }
 
+}
+
+@media screen and (max-width: 1200px) {
+        .flex-container {
+        flex-direction: column;
+
+        .flex-child {
+            padding-bottom: 3em;
+            
+            .mail-bttn {
+                margin: auto;
+                width: 12em;
+            }
+        }
+    }
 }
     
 
