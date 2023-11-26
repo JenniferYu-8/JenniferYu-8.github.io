@@ -543,6 +543,9 @@ nav.scroll {
   .hero-content {
     padding: 18vh 0;
   }
+  #event-sched .day {
+    font-size: 1.5em;
+  }
   .footer .row ul {
     padding-bottom: 10px;
   }
