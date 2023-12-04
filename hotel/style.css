@@ -357,6 +357,33 @@ h2 {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .section .flex-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .section .text {
+    width: 100%;
+    padding: 0;
+  }
+  .section .map {
+    width: 100%;
+    height: 50vh;
+    margin: 1em 0;
+  }
+  .section .photo {
+    margin: auto;
+  }
+  .section .photo img {
+    width: 100%;
+    margin: auto;
+    padding: 0 0 1em 0;
+  }
+}
+
 @media screen and (max-width: 1025px) {
   nav .navbar {
     height: 12vh;
@@ -393,6 +420,7 @@ h2 {
   nav .navbar .nav-links .links li {
     width: 100%;
     height: auto;
+    display: block;
   }
   nav .navbar .nav-links .links li a {
     font-size: 1.2em;
@@ -403,10 +431,11 @@ h2 {
   nav .navbar .nav-links .links li .sub-menu {
     display: none;
     position: relative;
-    font-size: 0.8em;
+    font-size: 0.6em;
     width: 100%;
     top: 0;
     right: 0;
+    padding-top: 0.5em;
     padding-bottom: 1em;
   }
   nav .navbar .nav-links .links #navbar-button {
@@ -440,14 +469,12 @@ h2 {
     font-size: 1.6rem;
   }
   nav .navbar .navbar-toggle .bar {
-    width: 25px;
-    height: 3px;
+    width: 30px;
+    height: 2px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: #eeeeee;
-    border: solid #eeeeee;
-    border-radius: 50px;
     display: block;
     cursor: pointer;
   }
@@ -479,6 +506,13 @@ h2 {
 @media screen and (max-width: 769px) {
   .hero-content {
     padding: 18vh 0;
+  }
+  .footer .row ul {
+    padding-bottom: 10px;
+  }
+  .footer .row ul li {
+    display: block;
+    padding: 0.25em;
   }
 }
 

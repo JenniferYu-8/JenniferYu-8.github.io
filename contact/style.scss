@@ -233,6 +233,7 @@ h2 {
         padding: 5vh 10vw;
         width: 100%;
         justify-content: space-between;
+        margin: auto;
     }
 
     .flex-child {
@@ -259,6 +260,8 @@ h2 {
     .mail-bttn {
         background-color: $lightRed;
         color: $white;
+        width: 12em;
+        margin: auto;
         // border-radius: 25px;
 
         a {
@@ -342,7 +345,6 @@ h2 {
 }
 
 @media screen and (max-width: 1025px) {
-
     nav {
         .navbar {
             //background: #878787;
@@ -378,6 +380,7 @@ h2 {
                     li {
                         width: 100%;
                         height: auto;
+                        display: block;
                 
                         a {
                             font-size: 1.2em;
@@ -390,11 +393,13 @@ h2 {
                         .sub-menu {
                             display: none;
                             position: relative;
-                            font-size: 0.8em;
+                            font-size: 0.6em;
                             width: 100%;
                             top: 0;
                             right: 0;
+                            padding-top: 0.5em;
                             padding-bottom: 1em;
+                            // border-bottom: solid $lightRed;
                         }
                     }
 
@@ -430,13 +435,13 @@ h2 {
             }
 
             .navbar-toggle .bar {
-                width: 25px;
-                height: 3px;
+                width: 30px; // was 25
+                height: 2px; // was 3
                 margin: 5px auto;
                 transition: all 0.3s ease-in-out;
                 background: $white;
-                border: solid $white;
-                border-radius: 50px;
+                // border: solid $white;
+                // border-radius: 50px;
                 display: block;
                 cursor: pointer;
             }
@@ -469,12 +474,40 @@ h2 {
     }
 
 }
+
+@media screen and (max-width: 1200px) {
+        .flex-container {
+        flex-direction: column;
+
+        .flex-child {
+            padding-bottom: 3em;
+            
+            .mail-bttn {
+                margin: auto;
+                width: 12em;
+            }
+        }
+    }
+}
     
 
 @media screen and (max-width: 769px) {
 
     .hero-content {
         padding: 18vh 0; 
+    }
+
+    .footer {
+        .row {
+            ul {
+                padding-bottom: 10px;
+
+                li {
+                    display:block;
+                    padding: 0.25em;
+                }
+            }
+        }
     }
 }
 

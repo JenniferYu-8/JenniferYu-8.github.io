@@ -7,6 +7,7 @@ window.onscroll = () => {
   }
 };
 
+// Accordion
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -32,3 +33,15 @@ acc[i].addEventListener("click", function() {
     } 
 });
 }
+
+// Mobile
+const 
+    menu = document.querySelector("#mobile-menu"),
+    menuLinks = document.querySelector(".links"),
+    menuTop = document.querySelector(".navbar");
+
+menu.addEventListener("click", function() {
+    menu.classList.toggle("is-active");
+    menuLinks.classList.toggle("active");
+    menuTop.classList.toggle("active");
+})
