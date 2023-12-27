@@ -249,46 +249,9 @@ nav.scroll {
   color: #eeeeee;
 }
 
-#event-sched {
+img {
   width: 100%;
-  border-collapse: collapse;
-  background-color: #822726;
-  color: #eeeeee;
-}
-
-#event-sched th, #event-sched td {
-  border-collapse: collapse;
-  padding: 2vh 1vw;
-}
-
-#event-sched th {
-  background-color: #411313;
-  color: #eeeeee;
-}
-
-#event-sched .day {
-  background-color: #343434;
-  color: #eeeeee;
-  font-family: 'proxima_nova_bold';
-  font-size: 2em;
-  text-align: center;
-  padding-top: 2vh;
-}
-
-#event-sched .activities {
-  background-color: #bbb;
-  color: black;
-  text-align: center;
-}
-
-#event-sched .nothing {
-  background-color: #ddd;
-  color: black;
-}
-
-#event-sched tr:nth-child(even) {
-  background-color: #411313;
-  color: #eeeeee;
+  height: auto;
 }
 
 .button {
