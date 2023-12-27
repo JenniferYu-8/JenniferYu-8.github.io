@@ -212,39 +212,107 @@ h2 {
     text-align: center;
 }
 
-// DELETE THE SECTON BELOW FOR THE ACC PAGE
-p {
+// INSERT PAGE-SPECIFIC STYLES HERE
+.center {
     text-align: center;
-    font-size: 2em;
-    padding: 5vh 10vw;
 }
 
-.icon-container {
+.flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 3vh 40vw;
+    padding-bottom: 2em;
 
-    a {
-        text-decoration:none;
-        color: $darkRed;
-        transition:0.5s;
-        padding-bottom: 10vh;
+    .flex-child {
+        background-color: $lightRed;
+        color: $white;
+        // border-radius: 10px;
 
-        &:hover {
-            color:$lightRed;
+        a {
+            color: $white;
+            font-size: 1.3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            padding: 5vh 5vw;
+            height: 100%;
+            width: 100%;
         }
 
-        i {
-            font-size:5em;
-            margin:0% 1%;       
+        &:hover {
+            transform: scale(1.01);
+            filter: drop-shadow(0 0 3px $darkRed);
         }
     }
 }
-// ^^^ DELETE THIS SECTION FOR THE ACC PAGE
 
-// INSERT PAGE-SPECIFIC STYLES HERE
+.section {
+    padding: 12vh 12vw;
 
+    h2 {
+        padding-bottom: 5vh;
+    }
+
+    h3 {
+        font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+        padding: 3vh 0 1vh 0;
+    }
+
+    p {
+        text-align: justify;
+        line-height: 2em;
+
+        .bolded {
+            font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+        }
+    }
+
+    .group {
+        padding-top: 5vh;
+    }
+
+    .flex-box  {
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        padding-bottom: 1em;
+
+        .img-wrap {
+            position: relative;
+            width: 14vw;
+            text-align: center;
+            margin-right: 1em;
+    
+            img {
+                width: 100%;
+                filter: brightness(50%);
+                // border: 5px solid $darkRed;
+            }
+    
+            .partner {
+                color: $white;
+                font-size: 2em;
+                text-transform: uppercase;
+                font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+                position: absolute;
+                width: 100%;
+                top: 40%;
+            }
+    
+            &:hover {
+                filter: drop-shadow(0 0 5px $darkRed);
+    
+                .committee {
+                    filter: drop-shadow(0 0 5px $darkRed);
+                }
+            }
+    
+        }
+    }
+
+
+}
 
 
 

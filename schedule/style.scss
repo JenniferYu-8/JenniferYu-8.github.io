@@ -237,51 +237,56 @@ nav.scroll {
     color: $white;
 }
 
-#event-sched {
+img {
     width: 100%;
-    // border: 1px solid;
-    border-collapse: collapse;
-    background-color: $lightRed;
-    color: $white;
-
-    th, td {
-        // border: 1px solid;
-        border-collapse: collapse;
-        padding: 2vh 1vw;
-    }
-
-    th {
-        background-color: $darkRed;
-        color: $white;
-    }
-
-    .day {
-        background-color: $darkGrey;
-        color: $white;
-        font-family: 'proxima_nova_bold';
-        font-size: 2em; 
-        text-align: center;
-        padding-top: 2vh;
-    }
-
-    .activities {
-        // background-color: $white;
-        background-color: #bbb;
-        color: black;
-        text-align: center;
-    }
-
-    .nothing {
-        background-color: #ddd;
-        // background-color: $white;
-        color: black;
-    }
-
-    tr:nth-child(even) {
-        background-color: $darkRed;
-        color: $white;
-    }
+    height: auto;
 }
+
+// #event-sched {
+//     width: 100%;
+//     // border: 1px solid;
+//     border-collapse: collapse;
+//     background-color: $lightRed;
+//     color: $white;
+
+//     th, td {
+//         // border: 1px solid;
+//         border-collapse: collapse;
+//         padding: 2vh 1vw;
+//     }
+
+//     th {
+//         background-color: $darkRed;
+//         color: $white;
+//     }
+
+//     .day {
+//         background-color: $darkGrey;
+//         color: $white;
+//         font-family: 'proxima_nova_bold';
+//         font-size: 2em; 
+//         text-align: center;
+//         padding-top: 2vh;
+//     }
+
+//     .activities {
+//         // background-color: $white;
+//         background-color: #bbb;
+//         color: black;
+//         text-align: center;
+//     }
+
+//     .nothing {
+//         background-color: #ddd;
+//         // background-color: $white;
+//         color: black;
+//     }
+
+//     tr:nth-child(even) {
+//         background-color: $darkRed;
+//         color: $white;
+//     }
+// }
 
 .button {
     background-color: $lightRed;
