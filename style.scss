@@ -627,7 +627,7 @@ nav.scroll {
                 transition: all 0.3s ease-in-out;
                 background: $white;
                 // border: solid $white;
-                border-radius: 50px;
+                // border-radius: 50px;
                 display: block;
                 cursor: pointer;
             }
@@ -644,11 +644,11 @@ nav.scroll {
             }
         
             #mobile-menu.is-active .bar:nth-child(1) {
-                transform: translateY(8px) rotate(45deg);
+                transform: translateY(7px) rotate(45deg);
             }
         
             #mobile-menu.is-active .bar:nth-child(3) {
-                transform: translateY(-8px) rotate(-45deg);
+                transform: translateY(-7px) rotate(-45deg);
             }
             
         }
