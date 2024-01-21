@@ -204,12 +204,6 @@ nav.scroll {
 // Page content styles
 .body {
     background-color: $white;
-    // padding: 12vh 12vw;
-}
-
-h2 {
-    font-family: 'proxima_nova_bold';
-    font-size: 2em; // FJ CHANGE TO 2em FOR THE ACC PAGE
 }
 
 // INSERT PAGE-SPECIFIC STYLES HERE
@@ -221,13 +215,10 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-bottom: 2em;
 
     .flex-child {
         background-color: $lightRed;
         color: $white;
-        width: 38%;
-        text-align: center;
         // border-radius: 10px;
 
         a {
@@ -249,15 +240,14 @@ h2 {
     }
 }
 
-.bold {
-    font-family: 'proxima_nova_bold';
-}
-
 .section {
     padding: 12vh 12vw;
 
     h2 {
         padding-bottom: 5vh;
+        font-size: 2em;
+        font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+        text-align: center;
     }
 
     h3 {
@@ -274,80 +264,19 @@ h2 {
         }
     }
 
-    .mail {
-        color: $lightRed;
-        text-decoration: none;
-        font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
-
-        &:hover {
-            color: #9f4745;
-        }
+    .bold {
+        font-family: 'proxima_nova_bold';
     }
 
-
-}
-
-.grey-section {
-    background-color: $darkGrey;
-    color: $white;
-
-    .tables {
-        padding-bottom: 5vh;
-        width: 78vw;
-        margin: auto;
+    .italicize {
+        font-style: italic;
     }
 
-    table {
-        width: 100%;
-        border: 1px solid;
-        border-collapse: collapse;
-
-        th, td {
-            border: 1px solid;
-            border-collapse: collapse;
-            padding: 2vh 1vw;
-        }
-
-        .bold {
-            font-family: 'proxima_nova_bold';
-        }
-
-        .middle {
-            text-align: center;
-        }
-    }
 
     .email {
         font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 
         a {
-            color: #E89695;
-            text-decoration: none;
-            font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
-
-            &:hover {
-                color: #ebafae;
-            }
-        }
-    }
-
-}
-
-.white-section {
-    ol {
-        padding: 0 0 5vh 5vw;
-        line-height: 2em;
-
-        ul {
-            padding-left: 5vw;
-        }
-    }
-
-
-    .bold {
-        font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
-
-        .mail {
             color: $lightRed;
             text-decoration: none;
             font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
@@ -357,13 +286,36 @@ h2 {
             }
         }
     }
+
 }
 
-.flex-child-2 {
-    width: 40%;
+.grey-section {
+    background-color: $darkGrey;
+    color: $white;
 
-    p {
-        font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+    .table-container {
+        margin: auto;
+
+        table {
+            width: 80%;
+            margin: auto;
+            border: 1px solid;
+            border-collapse: collapse;
+    
+            th, td {
+                border: 1px solid;
+                border-collapse: collapse;
+                padding: 2vh 1vw;
+            }
+    
+            .bold {
+                font-family: 'proxima_nova_bold';
+            }
+    
+            .middle {
+                text-align: center;
+            }
+        }
     }
 }
 
@@ -428,7 +380,6 @@ h2 {
 }
 
 @media screen and (max-width: 1025px) {
-
     nav {
         .navbar {
             //background: #878787;
@@ -557,16 +508,6 @@ h2 {
         }
     }
 
-    .flex-container {
-        .flex-child {
-            margin: 5px;
-
-            a {
-                padding: 20px;
-            }
-        }
-    }
-
 }
     
 
@@ -574,37 +515,6 @@ h2 {
 
     .hero-content {
         padding: 18vh 0; 
-
-        h1 {
-            font-size: 4em;
-        }
-
-        h2 {
-            font-size: 1.5em;
-        }
-
-        p {
-            font-size: 1.5em; // iw
-        }
-    }
-
-    .tables {
-        overflow-x: auto;
-        font-size: 0.55em;
-    }
-
-    .flex-container {
-        width: 100%;
-        flex-direction: column;
-
-        .flex-child {
-            width: 100%;
-        }
-
-        .flex-child-2 {
-            width: 100%;
-            padding-bottom: 40px;
-        }
     }
 
     .footer {
@@ -639,41 +549,40 @@ h2 {
                     }
                 }
             }
-
-            .navbar-toggle .bar {
-                width: 25px;
-                height: 1px;
-                margin: 5px auto;
-                transition: all 0.3s ease-in-out;
-                background: $white;
-                border: solid $white;
-                border-radius: 50px;
-                display: block;
-                cursor: pointer;
-            }
         }
     }
 
     .hero-content {
         padding: 18vh 0; 
 
+        .hero-info {
+            padding: 0.2em;
+            i {
+                font-size: 1em;
+            }
+        }
+
         h1 {
             font-size: 2em;
         }
 
-        h2 {
-            font-size: 1em;
+        .hero-countdown {
+            width: 20em; // iw
         }
 
-        p {
-            font-size: 1em; // iw
-        }
     }
 }
 
 @media screen and (max-width: 320px) {
     .hero-content {
         padding: 18vh 0; 
+
+        .hero-info {
+
+            i {
+                font-size: 1em;
+            }
+        }
 
         h1 {
             font-size: 2em;
