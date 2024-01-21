@@ -218,11 +218,6 @@ nav.scroll {
   background-color: #eeeeee;
 }
 
-h2 {
-  font-family: 'proxima_nova_bold';
-  font-size: 2em;
-}
-
 .center {
   text-align: center;
 }
@@ -238,14 +233,11 @@ h2 {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding-bottom: 2em;
 }
 
 .flex-container .flex-child {
   background-color: #822726;
   color: #eeeeee;
-  width: 38%;
-  text-align: center;
 }
 
 .flex-container .flex-child a {
@@ -273,16 +265,15 @@ h2 {
           filter: drop-shadow(0 0 3px #411313);
 }
 
-.bold {
-  font-family: 'proxima_nova_bold';
-}
-
 .section {
   padding: 12vh 12vw;
 }
 
 .section h2 {
   padding-bottom: 5vh;
+  font-size: 2em;
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+  text-align: center;
 }
 
 .section h3 {
@@ -299,13 +290,25 @@ h2 {
   font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 }
 
-.section .mail {
+.section .bold {
+  font-family: 'proxima_nova_bold';
+}
+
+.section .italicize {
+  font-style: italic;
+}
+
+.section .email {
+  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+}
+
+.section .email a {
   color: #822726;
   text-decoration: none;
   font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
 }
 
-.section .mail:hover {
+.section .email a:hover {
   color: #9f4745;
 }
 
@@ -314,75 +317,29 @@ h2 {
   color: #eeeeee;
 }
 
-.grey-section .tables {
-  padding-bottom: 5vh;
-  width: 78vw;
+.grey-section .table-container {
   margin: auto;
 }
 
-.grey-section table {
-  width: 100%;
+.grey-section .table-container table {
+  width: 80%;
+  margin: auto;
   border: 1px solid;
   border-collapse: collapse;
 }
 
-.grey-section table th, .grey-section table td {
+.grey-section .table-container table th, .grey-section .table-container table td {
   border: 1px solid;
   border-collapse: collapse;
   padding: 2vh 1vw;
 }
 
-.grey-section table .bold {
+.grey-section .table-container table .bold {
   font-family: 'proxima_nova_bold';
 }
 
-.grey-section table .middle {
+.grey-section .table-container table .middle {
   text-align: center;
-}
-
-.grey-section .email {
-  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
-}
-
-.grey-section .email a {
-  color: #E89695;
-  text-decoration: none;
-  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
-}
-
-.grey-section .email a:hover {
-  color: #ebafae;
-}
-
-.white-section ol {
-  padding: 0 0 5vh 5vw;
-  line-height: 2em;
-}
-
-.white-section ol ul {
-  padding-left: 5vw;
-}
-
-.white-section .bold {
-  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
-}
-
-.white-section .bold .mail {
-  color: #822726;
-  text-decoration: none;
-  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
-}
-
-.white-section .bold .mail:hover {
-  color: #9f4745;
-}
-
-.flex-child-2 {
-  width: 40%;
-}
-
-.flex-child-2 p {
-  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
 }
 
 .footer {
@@ -568,44 +525,11 @@ h2 {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
-  .flex-container .flex-child {
-    margin: 5px;
-  }
-  .flex-container .flex-child a {
-    padding: 20px;
-  }
 }
 
 @media screen and (max-width: 769px) {
   .hero-content {
     padding: 18vh 0;
-  }
-  .hero-content h1 {
-    font-size: 4em;
-  }
-  .hero-content h2 {
-    font-size: 1.5em;
-  }
-  .hero-content p {
-    font-size: 1.5em;
-  }
-  .tables {
-    overflow-x: auto;
-    font-size: 0.55em;
-  }
-  .flex-container {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .flex-container .flex-child {
-    width: 100%;
-  }
-  .flex-container .flex-child-2 {
-    width: 100%;
-    padding-bottom: 40px;
   }
   .footer .row ul {
     padding-bottom: 10px;
@@ -625,35 +549,29 @@ h2 {
     line-height: 1em;
     padding-bottom: 0;
   }
-  nav .navbar .navbar-toggle .bar {
-    width: 25px;
-    height: 1px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background: #eeeeee;
-    border: solid #eeeeee;
-    border-radius: 50px;
-    display: block;
-    cursor: pointer;
-  }
   .hero-content {
     padding: 18vh 0;
+  }
+  .hero-content .hero-info {
+    padding: 0.2em;
+  }
+  .hero-content .hero-info i {
+    font-size: 1em;
   }
   .hero-content h1 {
     font-size: 2em;
   }
-  .hero-content h2 {
-    font-size: 1em;
-  }
-  .hero-content p {
-    font-size: 1em;
+  .hero-content .hero-countdown {
+    width: 20em;
   }
 }
 
 @media screen and (max-width: 320px) {
   .hero-content {
     padding: 18vh 0;
+  }
+  .hero-content .hero-info i {
+    font-size: 1em;
   }
   .hero-content h1 {
     font-size: 2em;
