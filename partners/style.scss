@@ -272,7 +272,7 @@ h2 {
 
     .flex-box  {
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         // justify-content: space-between;
         padding-bottom: 1em;
 
@@ -504,6 +504,15 @@ h2 {
         }
     }
 
+    .flex-container {
+        flex-direction: column;
+
+        .flex-child {
+            margin-bottom: 1em;
+            text-align: center;
+        }
+    }
+
 }
     
 
@@ -512,6 +521,20 @@ h2 {
     .hero-content {
         padding: 18vh 0; 
     }
+
+    .section {
+        .flex-box {
+            flex-direction: column;
+            margin: auto;
+            width: 100%;
+            padding-bottom: 0;
+
+            .img-wrap {
+                width: 100%;
+            }
+        }
+    }
+
 
     .footer {
         .row {

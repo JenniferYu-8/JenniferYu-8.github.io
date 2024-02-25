@@ -301,8 +301,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding-bottom: 1em;
 }
 
@@ -525,11 +523,33 @@ h2 {
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
+  .flex-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-container .flex-child {
+    margin-bottom: 1em;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 769px) {
   .hero-content {
     padding: 18vh 0;
+  }
+  .section .flex-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .section .flex-box .img-wrap {
+    width: 100%;
   }
   .footer .row ul {
     padding-bottom: 10px;
