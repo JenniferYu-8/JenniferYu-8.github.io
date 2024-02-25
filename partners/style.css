@@ -315,6 +315,9 @@ h2 {
 
 .section .flex-box .img-wrap img {
   width: 100%;
+}
+
+.section .flex-box .img-wrap .tbd {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
 }
