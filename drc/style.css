@@ -244,6 +244,29 @@ nav.scroll {
   padding-left: 3vw;
 }
 
+.grey-section {
+  background-color: #343434;
+  color: #eeeeee;
+}
+
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.flex-box .flex-child img {
+  height: 20em;
+}
+
+.flex-box .flex-child video {
+  height: 20em;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -494,6 +517,26 @@ img {
     background: #411313;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+  }
+  .grey-section .flex-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .grey-section .flex-box .flex-child {
+    width: auto;
+    padding-bottom: 1em;
+  }
+  .grey-section .flex-box .flex-child img {
+    width: 50%;
+    height: auto;
+    margin: 0 25%;
+  }
+  .grey-section .flex-box .flex-child video {
+    height: auto;
+    width: 50%;
+    margin: 0 25%;
   }
 }
 
