@@ -232,6 +232,29 @@ nav.scroll {
     }
 }
 
+.grey-section {
+    background-color: $darkGrey;
+    color: $white;
+}
+
+.flex-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+    .flex-child {
+        // height: 20em;
+
+        img {
+            height: 20em;
+        }
+
+        video {
+            height: 20em;
+        }
+    }
+}
+
 img {
     width: 100%;
     height: auto;
@@ -481,6 +504,30 @@ img {
         .navbar.active { // maybe fix it up a bit later
             background: $darkRed;
             transition: all 0.5s ease;
+        }
+    }
+
+    .grey-section {
+        .flex-box {
+            flex-direction: column;
+
+            .flex-child {
+                width: auto;
+                // margin: auto;
+                padding-bottom: 1em;
+
+                img {
+                    width: 50%;
+                    height: auto;
+                    margin: 0 25%;
+                }
+
+                video {
+                    height: auto;
+                    width: 50%;
+                    margin: 0 25%;
+                }
+            }
         }
     }
 
