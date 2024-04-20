@@ -220,46 +220,43 @@ nav.scroll {
 
 h2 {
   font-family: 'proxima_nova_bold';
-  font-size: 3em;
-  padding-top: 10vh;
+  font-size: 1.5em;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+
+.section {
+  padding: 10vh 12vw;
+  line-height: 2em;
+  text-align: justify;
+}
+
+ol {
+  padding: 1em 3em;
+}
+
+.button {
+  margin: 1.5em auto;
   text-align: center;
 }
 
-p {
-  text-align: center;
-  font-size: 2em;
-  padding: 5vh 10vw;
-}
-
-.icon-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 3vh 40vw;
-}
-
-.icon-container a {
+.button a {
+  padding: 1em;
+  width: 20em;
+  background-color: #822726;
+  color: #eeeeee;
   text-decoration: none;
-  color: #411313;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  padding-bottom: 10vh;
 }
 
-.icon-container a:hover {
-  color: #822726;
+.button:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  -webkit-filter: drop-shadow(0 0 3px #411313);
+          filter: drop-shadow(0 0 3px #411313);
 }
 
-.icon-container a i {
-  font-size: 5em;
-  margin: 0% 1%;
+.bold {
+  font-family: 'proxima_nova_bold';
 }
 
 .footer {
