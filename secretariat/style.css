@@ -560,18 +560,6 @@ h2 {
     line-height: 1em;
     padding-bottom: 0;
   }
-  nav .navbar .navbar-toggle .bar {
-    width: 25px;
-    height: 1px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background: #eeeeee;
-    border: solid #eeeeee;
-    border-radius: 50px;
-    display: block;
-    cursor: pointer;
-  }
   .hero-content {
     padding: 18vh 0;
   }
