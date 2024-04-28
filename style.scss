@@ -742,18 +742,6 @@ nav.scroll {
                     }
                 }
             }
-
-            .navbar-toggle .bar {
-                width: 25px;
-                height: 1px;
-                margin: 5px auto;
-                transition: all 0.3s ease-in-out;
-                background: $white;
-                border: solid $white;
-                border-radius: 50px;
-                display: block;
-                cursor: pointer;
-            }
         }
     }
 
