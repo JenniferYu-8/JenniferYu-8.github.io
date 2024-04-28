@@ -231,6 +231,18 @@ h2 {
   text-align: justify;
 }
 
+.announcement {
+  width: 78vw;
+  background-color: #822726;
+  color: #eeeeee;
+  padding: 0.5em;
+}
+
+.announcement p {
+  text-align: center;
+  font-family: 'proxima_nova_bold';
+}
+
 ol {
   padding: 1em 3em;
 }
