@@ -1,23 +1,19 @@
 @font-face {
-  font-family: 'proxima_nova_rgregular';
+  font-family: "proxima_nova_rgregular";
   src: url(proxima.otf);
 }
-
 @font-face {
-  font-family: 'proxima_nova_bold';
+  font-family: "proxima_nova_bold";
   src: url(proxima-bold.otf);
 }
-
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
 }
 
 .background-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 5, 5, 0.8)), to(rgba(10, 10, 10, 0.7))), url("/images/canmun.jpg") !important;
   background-image: linear-gradient(rgba(5, 5, 5, 0.8), rgba(10, 10, 10, 0.7)), url("/images/canmun.jpg") !important;
   background-size: cover;
   position: relative;
@@ -33,84 +29,53 @@ nav {
   height: 12vh;
   background: transparent;
 }
-
 nav .navbar {
   height: 100%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 3em;
   background: transparent;
 }
-
 nav .navbar img {
   width: 10vh;
   margin: 1vh;
 }
-
 nav .navbar img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-filter: drop-shadow(0 0 5px #411313);
-          filter: drop-shadow(0 0 5px #411313);
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 5px #411313);
 }
-
 nav .navbar .nav-links .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 nav .navbar .nav-links .links li {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   list-style: none;
   padding: 0.2em 1em;
   white-space: nowrap;
 }
-
 nav .navbar .nav-links .links li:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
-
 nav .navbar .nav-links .links li:hover .sub-menu {
-  -webkit-animation: growDown 0.2s ease-in-out forwards;
-          animation: growDown 0.2s ease-in-out forwards;
-  -webkit-transform-origin: top center;
-          transform-origin: top center;
+  animation: growDown 0.2s ease-in-out forwards;
+  transform-origin: top center;
   display: block;
 }
-
 nav .navbar .nav-links .links li a {
   height: 100%;
   font-size: 1.1em;
   color: #eeeeee;
   text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
-
 nav .navbar .nav-links .links li a:hover {
   text-shadow: 0 0 1px #411313, 0 0 1px #411313;
 }
-
 nav .navbar .nav-links .links li .sub-menu {
   position: absolute;
   top: 1.5em;
@@ -119,62 +84,42 @@ nav .navbar .nav-links .links li .sub-menu {
   line-height: 4vh;
   display: none;
 }
-
 nav .navbar .nav-links .links li .sub-menu li {
   padding: 0 2vw;
 }
-
 nav .navbar .nav-links .links li .sub-menu li:hover {
   background-color: rgba(136, 0, 0, 0.2);
 }
-
 nav .navbar .nav-links .links li .sub-menu li a {
   color: #eeeeee;
 }
-
 nav .navbar .nav-links .links li .sub-menu li a:hover {
   text-shadow: none;
 }
-
 nav .navbar .nav-links .links #navbar-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 0 1vw;
 }
-
 nav .navbar .nav-links .links #navbar-button #button {
   color: #eeeeee;
   border-color: #411313;
   background-color: rgba(130, 39, 38, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   padding: 0 1.5vw;
   height: 6vh;
   width: 100%;
   border: solid;
 }
-
 nav .navbar .nav-links .links #navbar-button #button:hover {
   text-shadow: none;
   border-color: #eeeeee !important;
   background-color: #eeeeee;
   color: #411313;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -183,12 +128,8 @@ nav.scroll {
 }
 
 .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   list-style-type: none;
   text-align: center;
 }
@@ -196,66 +137,44 @@ nav.scroll {
 .hero {
   height: 100vh;
 }
-
 .hero a {
   color: #eeeeee;
   background-color: #822726;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   padding: 0.5em 1em;
   font-size: 1.8em;
   text-transform: uppercase;
-  font-family: 'proxima_nova_bold';
+  font-family: "proxima_nova_bold";
 }
-
 .hero a:hover {
   text-shadow: none;
   background-color: #eeeeee;
   color: #411313;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-
 .hero .hero-container {
   width: 100%;
   text-align: center;
   margin-bottom: 10vh;
 }
-
 .hero #date {
   padding-right: 2em;
 }
-
 .hero .flex-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   padding-top: 3em;
 }
-
 .hero .hero-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  justify-content: center;
+  align-items: flex-start;
   padding: 1vh;
 }
-
 .hero .hero-info i {
   font-size: 1.3em;
   padding-right: 0.6em;
@@ -266,26 +185,22 @@ nav.scroll {
   color: #eeeeee;
   padding: 25vh 0;
 }
-
 .hero-content h1 {
   color: #eeeeee;
   font-size: 5em;
   text-transform: uppercase;
-  font-family: 'proxima_nova_bold';
+  font-family: "proxima_nova_bold";
 }
-
 .hero-content h2 {
   color: #eeeeee;
   font-size: 1.5em;
 }
-
 .hero-content p {
   color: #eeeeee;
   font-size: 1.6em;
   font-style: italic;
   padding: 2vh;
 }
-
 .hero-content .hero-countdown {
   background-color: rgba(20, 20, 20, 0.5);
   color: #ccc;
@@ -293,14 +208,12 @@ nav.scroll {
   margin: 3vh auto;
   margin-bottom: 8vh;
 }
-
 .hero-content li {
   display: inline-block;
   font-size: 1.5em;
   list-style-type: none;
   padding: 1em;
 }
-
 .hero-content li span {
   display: block;
   font-size: 3em;
@@ -312,25 +225,20 @@ nav.scroll {
   font-size: 1.05em;
   line-height: 3.8vh;
 }
-
 .letter-container h2 {
-  font-family: 'proxima_nova_bold';
+  font-family: "proxima_nova_bold";
   padding-bottom: 5vh;
 }
-
 .letter-container p {
   text-align: justify;
   text-justify: inter-word;
 }
-
 .letter-container .bold {
-  font-family: 'proxima_nova_bold';
+  font-family: "proxima_nova_bold";
 }
-
 .letter-container img {
   height: 15vh;
 }
-
 .letter-container #sec-gen {
   float: right;
   padding-left: 5vh;
@@ -344,32 +252,24 @@ nav.scroll {
   font-size: 1.05em;
   line-height: 3.8vh;
 }
-
 .section h2 {
-  font-family: 'proxima_nova_bold';
+  font-family: "proxima_nova_bold";
   padding-bottom: 5vh;
   text-align: center;
   font-size: 2em;
 }
-
 .section p {
   text-align: justify;
   line-height: 2em;
 }
-
 .section p .bolded {
-  font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
+  font-family: "proxima_nova_bold", Helvetica, Arial, sans-serif;
 }
-
 .section .flex-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .grey-section {
@@ -378,14 +278,9 @@ nav.scroll {
 }
 
 .stats-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .stats-container .stat {
   width: 20em;
   height: 30vh;
@@ -394,91 +289,66 @@ nav.scroll {
   padding: 50px 0;
   text-align: center;
 }
-
 .stats-container .number1 {
   padding: 30px;
   overflow: hidden;
   height: 7em;
 }
-
 .stats-container .number1 ul {
   list-style-type: none;
   font-size: 7em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bolder;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
   line-height: 1em;
   margin-top: -0.2em;
 }
-
 .stats-container .number1 .roll1 {
-  -webkit-animation-name: roll1;
-          animation-name: roll1;
+  animation-name: roll1;
 }
-
 .stats-container .number2 {
   padding: 30px;
   overflow: hidden;
   height: 7em;
 }
-
 .stats-container .number2 ul {
   list-style-type: none;
   font-size: 7em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bolder;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
   line-height: 1em;
   margin-top: -0.2em;
 }
-
 .stats-container .number2 .roll2 {
-  -webkit-animation-name: roll2;
-          animation-name: roll2;
+  animation-name: roll2;
 }
-
 .stats-container .number3 {
   padding: 30px;
   overflow: hidden;
   height: 7em;
 }
-
 .stats-container .number3 ul {
   list-style-type: none;
   font-size: 7em;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bolder;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
   line-height: 1em;
   margin-top: -0.2em;
 }
-
 .stats-container .number3 .roll3 {
-  -webkit-animation-name: roll3;
-          animation-name: roll3;
+  animation-name: roll3;
 }
-
 .stats-container .description p {
   text-align: center;
   line-height: 1.2em;
@@ -491,7 +361,6 @@ nav.scroll {
   padding: 3vh 0;
   text-align: center;
 }
-
 .footer .row {
   width: 100%;
   margin: 1% 0%;
@@ -499,41 +368,28 @@ nav.scroll {
   color: #aaaaaa;
   font-size: 1em;
 }
-
 .footer .row a {
   text-decoration: none;
   color: #aaaaaa;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
 .footer .row a:hover {
   color: #eeeeee;
 }
-
 .footer .row a i {
   font-size: 2em;
   margin: 0% 1%;
 }
-
 .footer .row ul {
   width: 100%;
 }
-
 .footer .row ul li {
   display: inline-block;
   margin: 0px 2vw;
 }
-
 .footer .row p {
   font-size: 0.85em;
   padding-top: 4vh;
-}
-
-@-webkit-keyframes roll1 {
-  100% {
-    margin-top: -9.2em;
-  }
 }
 
 @keyframes roll1 {
@@ -541,53 +397,24 @@ nav.scroll {
     margin-top: -9.2em;
   }
 }
-
-@-webkit-keyframes roll2 {
-  100% {
-    margin-top: -2.2em;
-  }
-}
-
 @keyframes roll2 {
   100% {
     margin-top: -2.2em;
   }
 }
-
-@-webkit-keyframes roll3 {
-  100% {
-    margin-top: -4.2em;
-  }
-}
-
 @keyframes roll3 {
   100% {
     margin-top: -4.2em;
   }
 }
-
-@-webkit-keyframes growDown {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-  }
-}
-
 @keyframes growDown {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    transform: scaleY(1);
   }
 }
-
 @media screen and (max-width: 1025px) {
   nav .navbar {
     height: 12vh;
@@ -599,22 +426,17 @@ nav.scroll {
     left: 5%;
   }
   nav .navbar img:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    -webkit-filter: drop-shadow(0 0 5px #411313);
-            filter: drop-shadow(0 0 5px #411313);
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 5px #411313);
   }
   nav .navbar .nav-links .links {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-columns: auto;
     margin: 0;
     width: 100%;
     position: absolute;
     top: -1000px;
     opacity: 0;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     height: 100vh;
     z-index: -1;
@@ -647,15 +469,9 @@ nav.scroll {
     white-space: nowrap;
   }
   nav .navbar .nav-links .links #navbar-button #button {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     border: 0;
     background-color: transparent;
     margin: auto;
@@ -666,7 +482,6 @@ nav.scroll {
     background-color: #411313;
     top: 100%;
     opacity: 1;
-    -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     z-index: 99;
     height: 70vh;
@@ -676,7 +491,6 @@ nav.scroll {
     width: 30px;
     height: 2px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background: #eeeeee;
     display: block;
@@ -686,23 +500,19 @@ nav.scroll {
     position: absolute;
     top: 20%;
     right: 5%;
-    -webkit-transform: translate(5%, 20%);
-            transform: translate(5%, 20%);
+    transform: translate(5%, 20%);
   }
   nav .navbar #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
   }
   nav .navbar #mobile-menu.is-active .bar:nth-child(1) {
-    -webkit-transform: translateY(7px) rotate(45deg);
-            transform: translateY(7px) rotate(45deg);
+    transform: translateY(7px) rotate(45deg);
   }
   nav .navbar #mobile-menu.is-active .bar:nth-child(3) {
-    -webkit-transform: translateY(-7px) rotate(-45deg);
-            transform: translateY(-7px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
   }
   nav .navbar.active {
     background: #411313;
-    -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   .stats-container {
@@ -713,7 +523,6 @@ nav.scroll {
     margin-bottom: 20px;
   }
 }
-
 @media screen and (max-width: 769px) {
   .hero-content {
     padding: 18vh 0;
@@ -750,7 +559,6 @@ nav.scroll {
     padding: 0.25em;
   }
 }
-
 @media screen and (max-width: 481px) {
   nav .navbar .nav-links .links li a {
     font-size: 0.8em;
@@ -837,7 +645,6 @@ nav.scroll {
     font-size: 5em;
   }
 }
-
 @media screen and (max-width: 320px) {
   .hero-content {
     padding: 18vh 0;
@@ -867,5 +674,4 @@ nav.scroll {
   .hero-content li span {
     font-size: 1.6em;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

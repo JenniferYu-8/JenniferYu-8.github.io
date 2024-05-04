@@ -230,6 +230,20 @@ nav.scroll {
         line-height: 2em;
         padding-left: 3vw;
     }
+
+    .bold {
+        font-family: 'proxima_nova_bold';
+    }
+
+    a {
+        color: $lightRed;
+        font-family: 'proxima_nova_bold';
+        text-decoration: none;
+        
+        &:hover {
+            color: #9f4745;
+        }
+    }
 }
 
 .grey-section {
