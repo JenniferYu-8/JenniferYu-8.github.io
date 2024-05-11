@@ -207,9 +207,9 @@ nav.scroll {
 
 h2 {
     font-family: 'proxima_nova_bold';
-    font-size: 3em; // FJ CHANGE TO 2em FOR THE ACC PAGE
-    padding-top: 10vh;
-    text-align: center;
+    font-size: 2em; // FJ CHANGE TO 2em FOR THE ACC PAGE
+    // padding-top: 10vh;
+    // text-align: center;
 }
 
 // INSERT PAGE-SPECIFIC STYLES HERE
@@ -217,35 +217,35 @@ h2 {
     text-align: center;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-bottom: 2em;
+// .flex-container {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-evenly;
+//     padding-bottom: 2em;
 
-    .flex-child {
-        background-color: $lightRed;
-        color: $white;
-        // border-radius: 10px;
+//     .flex-child {
+//         background-color: $lightRed;
+//         color: $white;
+//         // border-radius: 10px;
 
-        a {
-            color: $white;
-            font-size: 1.3em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            padding: 5vh 5vw;
-            height: 100%;
-            width: 100%;
-        }
+//         a {
+//             color: $white;
+//             font-size: 1.3em;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             text-decoration: none;
+//             padding: 5vh 5vw;
+//             height: 100%;
+//             width: 100%;
+//         }
 
-        &:hover {
-            transform: scale(1.01);
-            filter: drop-shadow(0 0 3px $darkRed);
-        }
-    }
-}
+//         &:hover {
+//             transform: scale(1.01);
+//             filter: drop-shadow(0 0 3px $darkRed);
+//         }
+//     }
+// }
 
 .section {
     padding: 12vh 12vw;
@@ -280,19 +280,19 @@ h2 {
 
         .img-wrap {
             position: relative;
-            width: 14vw;
+            width: 30%;
             text-align: center;
             margin-right: 1em;
     
             img {
                 width: 100%;
-                filter: brightness(50%);
+                filter: brightness(30%);
                 // border: 5px solid $darkRed;
             }
     
             .partner {
                 color: $white;
-                font-size: 2em;
+                font-size: 1.5em;
                 text-transform: uppercase;
                 font-family: 'proxima_nova_bold', Helvetica, Arial, sans-serif;
                 position: absolute;
@@ -503,6 +503,18 @@ h2 {
         }
     }
 
+    .section {
+        .flex-box {
+
+            .img-wrap {
+
+                .partner {
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+
 }
     
 
@@ -565,6 +577,19 @@ h2 {
             width: 20em; // iw
         }
 
+    }
+
+    .section {
+        .flex-box {
+            flex-direction: column;
+            margin: auto;
+            width: 100%;
+            padding-bottom: 0;
+
+            .img-wrap {
+                width: 100%;
+            }
+        }
     }
 }
 
