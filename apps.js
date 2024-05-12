@@ -24,7 +24,7 @@ menu.addEventListener("click", function() {
           minute = second * 60,
           hour = minute * 60,
           day = hour * 24,
-          munDay = "May 24, 2024 08:00:00"; // change date & time later
+          munDay = "May 25, 2024 07:00:00"; // change date & time later
     
     const countDown = new Date(munDay).getTime(),
         x = setInterval(function() {    

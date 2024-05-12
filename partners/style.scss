@@ -1,6 +1,7 @@
 $darkRed: #411313; // # rgb(65, 19, 19)
 $lightRed: #822726;
 $white: #eeeeee; // rgb(245, 245, 245)
+$darkGrey: #343434;
 
 @font-face {
     font-family: 'proxima_nova_rgregular';
@@ -315,6 +316,18 @@ h2 {
 
 }
 
+.grey-section {
+    background-color: $darkGrey;
+    color: $white;
+
+    .flex-box {
+        justify-content: space-between;
+
+        .img-wrap {
+            width: 40vw;
+        }
+    }
+}
 
 
 

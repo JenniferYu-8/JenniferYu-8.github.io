@@ -189,6 +189,13 @@ nav.scroll {
 .section a:hover {
   color: #9f4745;
 }
+.section .img-container {
+  padding-left: 32.5vw;
+}
+.section .img-container img {
+  width: 10vw;
+  height: auto;
+}
 
 .grey-section {
   background-color: #343434;
