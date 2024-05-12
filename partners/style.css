@@ -244,6 +244,17 @@ h2 {
   filter: drop-shadow(0 0 5px #411313);
 }
 
+.grey-section {
+  background-color: #343434;
+  color: #eeeeee;
+}
+.grey-section .flex-box {
+  justify-content: space-between;
+}
+.grey-section .flex-box .img-wrap {
+  width: 40vw;
+}
+
 .footer {
   background: #411313;
   padding: 3vh 0;
