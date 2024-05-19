@@ -39,9 +39,13 @@ menu.addEventListener("click", function() {
   
           //do something later when date is reached
           if (distance < 0) {
-            document.getElementById("headline").innerText = "It's my birthday!";
-            document.getElementById("countdown").style.display = "none";
-            document.getElementById("content").style.display = "block";
+            document.getElementById("days").innerText = 0,
+            document.getElementById("hours").innerText = 0,
+            document.getElementById("minutes").innerText = 0,
+            document.getElementById("seconds").innerText = 0;
+            // document.getElementById("headline").innerText = "It's my birthday!";
+            // document.getElementById("countdown").style.display = "none";
+            // document.getElementById("content").style.display = "block";
             clearInterval(x);
           }
           //seconds
