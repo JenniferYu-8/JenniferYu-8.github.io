@@ -207,44 +207,56 @@ nav.scroll {
 
 h2 {
     font-family: 'proxima_nova_bold';
-    font-size: 3em; // FJ CHANGE TO 2em FOR THE ACC PAGE
-    padding-top: 10vh;
-    text-align: center;
+    font-size: 1.5em; 
+    padding-top: 5vh;
+    padding-bottom: 2vh;
 }
-
-// DELETE THE SECTON BELOW FOR THE ACC PAGE
-p {
-    text-align: center;
-    font-size: 2em;
-    padding: 5vh 10vw;
-}
-
-.icon-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 3vh 40vw;
-
-    a {
-        text-decoration:none;
-        color: $darkRed;
-        transition:0.5s;
-        padding-bottom: 10vh;
-
-        &:hover {
-            color:$lightRed;
-        }
-
-        i {
-            font-size:5em;
-            margin:0% 1%;       
-        }
-    }
-}
-// ^^^ DELETE THIS SECTION FOR THE ACC PAGE
 
 // INSERT PAGE-SPECIFIC STYLES HERE
+.section {
+    padding: 10vh 12vw;
+    line-height: 2em;
+    text-align: justify;
+}
 
+.announcement {
+    // width: 100%;
+    width: 78vw;
+    background-color: $lightRed;
+    color: $white;
+    padding: 0.5em;
+
+    p {
+        text-align: center;
+        font-family: 'proxima_nova_bold';
+    }
+}
+
+ol {
+    padding: 1em 3em;
+}
+
+.button {
+    margin: 1.5em auto;
+    text-align: center;
+
+    a {
+        padding: 1em;
+        width: 20em;
+        background-color: $lightRed;
+        color: $white;
+        text-decoration: none;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+        filter: drop-shadow(0 0 3px $darkRed);
+    }
+}
+
+.bold {
+    font-family: 'proxima_nova_bold';
+}
 
 
 
