@@ -276,6 +276,9 @@ nav.scroll {
   background-color: #343434;
   color: white;
 }
+.grey-section a {
+  color: #E89695;
+}
 
 .stats-container {
   display: flex;

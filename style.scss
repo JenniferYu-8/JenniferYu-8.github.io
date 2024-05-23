@@ -357,6 +357,11 @@ nav.scroll {
     background-color: $darkGrey;
     color: white;
 
+    a {
+        color: #E89695;
+        // text-decoration: none;
+    }
+
 }
 
 .stats-container {
