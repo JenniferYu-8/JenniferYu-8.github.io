@@ -305,10 +305,6 @@ nav.scroll {
         text-justify: inter-word;
     }
 
-    .bold {
-        font-family: 'proxima_nova_bold';
-    }
-
     img {
         height: 15vh;
     }
@@ -320,6 +316,10 @@ nav.scroll {
         height: 55vh;
         width: auto;
     }
+}
+
+.bold {
+    font-family: 'proxima_nova_bold';
 }
 
 .section {
@@ -361,6 +361,7 @@ nav.scroll {
         color: #E89695;
         // text-decoration: none;
     }
+
 
 }
 
@@ -455,6 +456,38 @@ nav.scroll {
             font-size: 1em;
             text-transform: uppercase;
             
+        }
+    }
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 2em;
+
+    .flex-child {
+        background-color: $lightRed;
+        color: $white;
+        width: 38%;
+        text-align: center;
+        // border-radius: 10px;
+
+        a {
+            color: $white;
+            font-size: 1.3em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            padding: 1em 2em;
+            height: 100%;
+            width: 100%;
+        }
+
+        &:hover {
+            transform: scale(1.01);
+            filter: drop-shadow(0 0 3px $lightRed);
         }
     }
 }
@@ -712,6 +745,16 @@ nav.scroll {
           
         li span {
         font-size: 3em; // iw
+        }
+    }
+
+    .flex-container {
+        width: 100%;
+        flex-direction: column;
+
+        .flex-child {
+            width: 100%;
+            margin-bottom: 1em;
         }
     }
 
